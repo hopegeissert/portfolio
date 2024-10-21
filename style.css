@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+    font-family: 'EB Garamond';font-size: 22px;
+	background-color:#f3f3f3;
+}
+
+
+.MainLogo {
+	
+	max-width:1200px;
+	margin:auto;
+	text-align: center;
+}
+
+.MainLogo  img {
+	width:100%;
+	max-width:500px;
+}
+
+
+.JobTitle{
+	font-weight:bold;
+	text-align: center;
+	font-size: 30px;
+	margin-top:-60px;
+	color:#afaea8;
+}
+
+.IntroText{
+	text-align: center;
+	font-size:30px;
+	max-width:800px;
+	line-height:1.2;
+	margin:auto;
+	padding:30px;
+padding-top:80px;
+	padding-bottom:60px;
+}
+
+
+.BoxImage img{
+	width:100%;
+	max-width:450px;
+	padding:20px;
+	border-radius:40px;
+	
+}
+
+.BoxesWrapper{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.BoxText {
+	    text-align: center;
+    margin-bottom: 40px;
+	margin-top:-10px;
+}
+
+.BoxText a{
+	text-decoration: none;
+	color:#000;
+}
+
+.TopLinks{
+	text-align: center;
+}
+
+.TopLinks a{
+	color:#686868;
+	text-decoration:none;
+	padding:10px;
+}
+
+.TopLinks a:hover{
+	text-decoration:underline;
+}
+
+
+/* Page Styles */
+.TopLinks{
+	text-align: center;
+		background-color: #f3f3f3;
+		padding-top:10px;
+}
+
+.TopLinks a{
+	color:#686868;
+	text-decoration:none;
+	padding:10px;
+	font-size:22px;
+}
+
+.TopLinks a:hover{
+	text-decoration:underline;
+}
+
+	
+	.ContentWrapper {
+	    background-color: #f3f3f3;
+}
+	
+	.ProjectTitle{
+		 font-family: 'EB Garamond';font-size: 30px;
+		font-weight:500;
+		text-align: center;
+		padding:10px;
+		padding-top:50px;
+		margin-bottom:20px;
+		
+	}
+
+	.ProjectDescription{
+		 font-family: 'EB Garamond';font-size:25px;
+		text-align: center;
+		max-width:1300px;
+		margin: auto;
+		padding:10px;
+		
+	}
+	
+	.ImageContainer{
+		padding:30px;
+	}
+	
+	.ImageContainer img{
+		width:100%;
+		max-width: 500px;
+	}
+	
+	.ImageWrapper {
+		
+		padding-top:40px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+.Footer{
+	text-align: center;
+	padding:30px;
+	font-size:18px;
+	color:#afaea8;
+}
