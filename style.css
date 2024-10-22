@@ -47,6 +47,8 @@ padding-top:80px;
 	
 }
 
+
+
 .BoxesWrapper{
 	display:flex;
 	flex-direction: row;
@@ -145,4 +147,35 @@ padding-top:80px;
 	padding:30px;
 	font-size:18px;
 	color:#afaea8;
+}
+
+@media screen and (max-width:800px){
+	
+	.BoxImage img{
+		max-width:800px;
+	}
+	
+	.IntroText {
+    text-align: center;
+    font-size: 40px;
+    max-width: 800px;
+    line-height: 1.2;
+    margin: auto;
+    padding: 50px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+	
+	.ProjectDescription {
+    font-family: 'EB Garamond';
+    font-size: 35px;
+    text-align: center;
+    max-width: 1300px;
+    margin: auto;
+    padding: 40px;
+}
+	
+	.ProjectTitle{
+		font-size:50px;
+	}
 }
