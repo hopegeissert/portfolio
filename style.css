@@ -190,6 +190,11 @@ font-family: 'EB Garamond';
 	}
 }
 
+
+.gallery-item {
+	padding: 8px;
+}
+
  .gallery-item-shadow {
 	padding:12px;
  }
