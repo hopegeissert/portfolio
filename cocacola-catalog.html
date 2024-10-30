@@ -1,5 +1,11 @@
 <!doctype html>
-
+<html lang="en">
+<head>
+  <title>2023-2024 Coca-Cola Catalog</title>
+	
+	
+	
+</head>
 <style>
 	.ImageContainer img{
 		 box-shadow: 5px 10px 10px #c8c8c8;
@@ -34,71 +40,170 @@
 
 </div>
 	
+<div class="row">
+  <div class="column">
+      <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke1.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke1.png')"
+                alt="Image 7">
+        </div>
+	  
+	  <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke2.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke2.png')"
+                alt="Image 7">
+        </div>
+	  
+	  <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke3.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke3.png')"
+                alt="Image 7">
+        </div>
+	  	<div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke4.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke4.png')"
+                alt="Image 7">
+        </div>
+	  
 	
-	<div class="ImageWrapper">
+		
+			
+	  
+  </div>
 		
 		
 		
-	<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke1.png"/>	
-	</div>
 		
-		<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke2.png"/>	
-	</div>
-	
 		
-		<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke3.png"/>	
-	</div>
 		
-		<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke4.png"/>	
-	</div>
-		<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke5.png"/>	
-	</div>
-		<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke6.png"/>	
-	</div>
-	<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke7.png"/>	
-	</div>
+   <div class="column">
+	   
+	   
+	   
+	    <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke5.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke5.png')"
+                alt="Image 7">
+        </div>
+	     <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke6.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke6.png')"
+                alt="Image 7">
+        </div>
+      <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke7.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke7.png')"
+                alt="Image 7">
+        </div>
+	  
+  <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke8.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke8.png')"
+                alt="Image 7">
+        </div>	   
+	   
+	  <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke9.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke9.png')"
+                alt="Image 7">
+        </div>   
+	   
+
+	   
+	    
+	   
+	   
+        </div>
 		
-			<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke8.png"/>	
-	</div>
+	<div class="column">
 		
-			<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke9.png"/>	
-	</div>
+	  <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke10.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke10.png')"
+                alt="Image 7">
+        </div>	
 		
-			<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke10.png"/>	
-	</div>
+	<div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke11.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke11.png')"
+                alt="Image 7">
+        </div> 
+	  
+	   <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke12.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke12.png')"
+                alt="Image 7">
+        </div>
+	   
+	    <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke13.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke13.png')"
+                alt="Image 7">
+        </div> 
+	   
+	     <div class="gallery-item-shadow">
+            <img src=
+"Coca Cola Catalog/coke14.png"
+                onclick="openModal(
+'Coca Cola Catalog/coke14.png')"
+                alt="Image 7">
+        </div>	
 		
-			<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke11.png"/>	
-	</div>
-			<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke12.png"/>	
-	</div>
 		
-			<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke13.png"/>	
-	</div>
-			<div class="ImageContainer">
-		<img src="Coca Cola Catalog/coke14.png"/>	
-	</div>
 		
-	</div>
+	</div>	
+		
+		
+  </div>
 	
 	
 	</div>
 	
 	
 	<div class="Footer">© Hope Geissert, 2024.</div>
-	
+	 <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 	
 	
 </html>

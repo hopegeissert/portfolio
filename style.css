@@ -190,16 +190,18 @@ font-family: 'EB Garamond';
 	}
 }
 
-.gallery-item {
-     overflow: hidden;
-	 padding:4px;
+ .gallery-item-shadow {
+	padding:12px;
  }
 
- .gallery-item img {
+ .gallery-item-shadow img {
      width: 100%;
      height: auto;
      display: block;
+	    box-shadow: 5px 7px 7px #c8c8c8;
  }
+
+
 
  .modal {
      display: none;
@@ -249,7 +251,7 @@ font-family: 'EB Garamond';
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
-  max-width: 25%;
+  max-width: 31%;
   padding: 0 4px;
 }
 
@@ -265,6 +267,10 @@ font-family: 'EB Garamond';
     flex: 50%;
     max-width: 50%;
   }
+	
+	.row{
+		padding-top:0px;
+	}
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
