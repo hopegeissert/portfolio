@@ -1,11 +1,14 @@
 <!doctype html>
 
-<style>
+<html lang="en">
+<head>
+  <title>Large Paintings</title>
+	
+	
+	
+</head>
 
-	.ImageContainer img{
-		
-	}
-</style>
+
 
 
 <html><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,56 +29,107 @@
 </div>
 	
 	
-	<div class="ImageWrapper">
-	<div class="ImageContainer">
-		
-		<img src="Large Format Paintings/horse-colorado.jpg"/>
-			
-	</div>
-		<div class="ImageContainer">
-		
-		<img src="Large Format Paintings/black-hills.jpg"/>
-			
-	</div>
-			
 
-		<div class="ImageContainer">
+	
+	<div class="row">
+  <div class="column">
+      <div class="gallery-item">
+            <img src=
+"Large Format Paintings/horse-colorado.jpg"
+                onclick="openModal(
+'Large Format Paintings/horse-colorado.jpg')"
+                alt="Image 7">
+        </div>
+	  
+	  <div class="gallery-item">
+            <img src=
+"Large Format Paintings/black-hills.jpg"
+                onclick="openModal(
+'Large Format Paintings/black-hills.jpg')"
+                alt="Image 7">
+        </div>
+	  
+	  <div class="gallery-item">
+            <img src=
+"Large Format Paintings/wordart.jpg"
+                onclick="openModal(
+'Large Format Paintings/wordart.jpg')"
+                alt="Image 7">
+        </div>
+	  
+	  
+  </div>
 		
-		<img src="Large Format Paintings/wordart.jpg"/>
-			
+		
+	<div class="column">
+		<div class="gallery-item">
+            <img src=
+"Large Format Paintings/oldtruck.jpg"
+                onclick="openModal(
+'Large Format Paintings/oldtruck.jpg')"
+                alt="Image 7">
+        </div>
+	  
+	
+		
+			  <div class="gallery-item">
+            <img src=
+"Large Format Paintings/word-sign.jpg"
+                onclick="openModal(
+'Large Format Paintings/word-sign.jpg')"
+                alt="Image 7">
+        </div>
+		
+		
 	</div>	
-		<div class="ImageContainer">
 		
-		<img src="Large Format Paintings/oldtruck.jpg"/>
-			
-	</div>	
 		
-		<div class="ImageContainer">
 		
-		<img src="Large Format Paintings/sawyer.jpg"/>
-			
-	</div>
-		
-		<div class="ImageContainer">
-		
-		<img src="Large Format Paintings/word-art.jpg"/>
-			
-	</div>	
-		
-			<div class="ImageContainer">
-		
-		<img src="Large Format Paintings/word-sign.jpg"/>
-			
-	</div>
-				
-	</div>
+   <div class="column">
+	     <div class="gallery-item">
+            <img src=
+"Large Format Paintings/sawyer.jpg"
+                onclick="openModal(
+'Large Format Paintings/sawyer.jpg')"
+                alt="Image 7">
+        </div>
+      <div class="gallery-item">
+            <img src=
+"Large Format Paintings/word-art.jpg"
+                onclick="openModal(
+'Large Format Paintings/word-art.jpg')"
+                alt="Image 7">
+        </div>
+	  
+
+	  
+	 
+        </div>
+  </div>
+ 
+
 	
 	
 	</div>
 	
 	<div class="Footer">© Hope Geissert, 2024.</div>
 	
-	
-	
+	 <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 	
 </html>
