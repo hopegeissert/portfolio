@@ -261,7 +261,19 @@ font-family: 'EB Garamond';
   width: 100%;
 }
 
+
+
 /* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width:1240px){
+	.column {
+    flex: 40%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -273,7 +285,7 @@ font-family: 'EB Garamond';
 	}
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
