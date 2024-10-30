@@ -1,4 +1,11 @@
 <!doctype html>
+<html lang="en">
+<head>
+  <title>Channel Site Redesign</title>
+	
+	
+	
+</head>
 
 <style>
 	.ImageContainer img{
@@ -10,6 +17,8 @@
 		padding-bottom:10px;
 		font-size:20px;
 	}
+	
+
 	
 </style>
 
@@ -28,31 +37,87 @@
 	
 	<div class="ProjectDescription">Channel was ready for a fresh look and feel to their site in 2024, so I was asked to come up with a new design. I studied their brand to come up with ideas to refresh the site. Using their elements of arches and angled buttons, I applied these styles throughout the site and featured new photography that was done in the spring. Headwear is a top seller for them, so I created a site design that revolved around that. 
 
-
 </div>
+
 	
 	
-	<div class="ImageWrapper">
+
 		
 		
+			<div class="row">
+
 		
-		<div class="ImageContainer">
 		
-		<img src="Channel Site Redesign/channel-new-home.png"/>
 			
-	</div>
+<div class="column">
+	
+	     
+	
+	  <div class="gallery-item-shadow">
+            <img src=
+"Channel Site Redesign/channel-new-home.png"
+                onclick="openModal(
+'Channel Site Redesign/channel-new-home.png')"
+                alt="channel cover">
+        </div>
+	
+  
+	
+	    
+	   
+</div>
+		
 	
 		
+  </div>
+	
+			
+			<div class="rowsmallscreen">
+
+		
+		
+			
+<div class="column">
+	
+	     
+	
+	  <div class="gallery-item-shadow">
+            <img src=
+"Channel Site Redesign/channel-new-home.png"
+                onclick="openModal(
+'Channel Site Redesign/channel-new-home.png')"
+                alt="channel cover">
+        </div>
+	
+  
+	
+	    
+	   
+</div>
 		
 	
+		
+  </div>
 	</div>
-	
-	
-	</div>
-	
 	
 	<div class="Footer">© Hope Geissert, 2024.</div>
 	
-	
+	<!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 	
 </html>

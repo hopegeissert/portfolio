@@ -1,5 +1,11 @@
 <!doctype html>
-
+<html lang="en">
+<head>
+  <title>Bayer Site Redesign</title>
+	
+	
+	
+</head>
 <style>
 	.ImageContainer img{
 		 max-width:700px!important;
@@ -31,27 +37,89 @@
 </div>
 	
 	
-	<div class="ImageWrapper">
+<div class="row">
+ <div class="column-small">
+      <div class="gallery-item">
+		  
+		  Previous Site Design
+            <img src=
+"Bayer Site Redesign/Bayer-Old.png"
+                onclick="openModal(
+'Bayer Site Redesign/Bayer-Old.png')"
+                alt="old site design">
+        </div>
+	 
+	
+	 
+	 
+	  
+ </div>
 		
 		
-	<div class="ImageContainer">
-		<div class="ImageText">Previous Site Design</div>
-		<img src="Bayer Site Redesign/Bayer-Old.png"/>
 			
-	</div>
+<div class="column-small">
+	
+	    <div class="gallery-item">
 			
-	<div class="ImageContainer">
-		<div class="ImageText">Updated Site Design</div>
-		<img src="Bayer Site Redesign/bayer-redesign.png"/>
-			
-	</div>
+			Updated Site Design
+            <img src=
+"Bayer Site Redesign/bayer-redesign.png"
+                onclick="openModal(
+'Bayer Site Redesign/bayer-redesign.png')"
+                alt="bayer redesign">
+        </div>
+	    
+	   
+</div>
 		
-			
-		
+
 		
 	
-	</div>
 	
+		
+  </div>
+	
+	<div class="rowsmallscreen">
+ <div class="column-small">
+      <div class="gallery-item">
+		  
+		  Previous Site Design
+            <img src=
+"Bayer Site Redesign/Bayer-Old.png"
+                onclick="openModal(
+'Bayer Site Redesign/Bayer-Old.png')"
+                alt="old site design">
+        </div>
+	 
+	
+	 
+	 
+	  
+ </div>
+		
+		
+			
+<div class="column-small">
+	
+	    <div class="gallery-item">
+			
+			Updated Site Design
+            <img src=
+"Bayer Site Redesign/bayer-redesign.png"
+                onclick="openModal(
+'Bayer Site Redesign/bayer-redesign.png')"
+                alt="bayer redesign">
+        </div>
+	    
+	   
+</div>
+		
+
+		
+	
+	
+		
+  </div>
 	
 	</div>
 	
@@ -59,5 +127,22 @@
 	
 	<div class="Footer">© Hope Geissert, 2024.</div>
 	
+    <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 	
 </html>

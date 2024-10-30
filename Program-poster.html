@@ -1,4 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Program and Poster Design</title>
+	
+	
+	
+</head>
 
 <style>
 
@@ -25,60 +32,193 @@
 </div>
 	
 	
-	<div class="ImageWrapper">
-	<div class="ImageContainer">
+	<div class="row">
+
 		
-		<img src="Unity Play Designs/play1.png"/>
+		
 			
-	</div>
+<div class="column">
+	
+	     
+	
+	  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play1.png"
+                onclick="openModal(
+'Unity Play Designs/play1.png')"
+                alt="play design">
+        </div>
+	
+		  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play2.png"
+                onclick="openModal(
+'Unity Play Designs/play2.png')"
+                alt="play design">
+        </div>
+	
+	  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play3.png"
+                onclick="openModal(
+'Unity Play Designs/play3.png')"
+                alt="play design">
+        </div>
+	
+	    
+	   
+</div>
 		
-		<div class="ImageContainer">
+
+		<div class="column">
+
+		  	  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play4.png"
+                onclick="openModal(
+'Unity Play Designs/play4.png')"
+                alt="play design">
+        </div>
+				  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play5.png"
+                onclick="openModal(
+'Unity Play Designs/play5.png')"
+                alt="play design">
+        </div>
+				  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play6.png"
+                onclick="openModal(
+'Unity Play Designs/play6.png')"
+                alt="play design">
+        </div>
 		
-		<img src="Unity Play Designs/play2.png"/>
+		
+		</div>
+		
+		<div class="column">
+			  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play7.png"
+                onclick="openModal(
+'Unity Play Designs/play7.png')"
+                alt="play design">
+        </div>
 			
-	</div>
+				  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play8.png"
+                onclick="openModal(
+'Unity Play Designs/play8.png')"
+                alt="play design">
+        </div>
 			
-		<div class="ImageContainer">
+				  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play9.png"
+                onclick="openModal(
+'Unity Play Designs/play9.png')"
+                alt="play design">
+        </div>
+	
+		</div>
+	
 		
-		<img src="Unity Play Designs/play3.png"/>
+  </div>
+ 
+
+	<div class="rowsmallscreen">
+
+		
+		
 			
-	</div>
-		<div class="ImageContainer">
+<div class="column">
+	
+	     
+	
+	  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play1.png"
+                onclick="openModal(
+'Unity Play Designs/play1.png')"
+                alt="play design">
+        </div>
+	
+		  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play2.png"
+                onclick="openModal(
+'Unity Play Designs/play2.png')"
+                alt="play design">
+        </div>
+	
+	  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play3.png"
+                onclick="openModal(
+'Unity Play Designs/play3.png')"
+                alt="play design">
+        </div>
+	
+	    
+	  	  	  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play4.png"
+                onclick="openModal(
+'Unity Play Designs/play4.png')"
+                alt="play design">
+        </div>
+				  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play5.png"
+                onclick="openModal(
+'Unity Play Designs/play5.png')"
+                alt="play design">
+        </div> 
+</div>
 		
-		<img src="Unity Play Designs/play4.png"/>
+
+		<div class="column">
+
+	
+				  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play6.png"
+                onclick="openModal(
+'Unity Play Designs/play6.png')"
+                alt="play design">
+        </div>
+			  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play7.png"
+                onclick="openModal(
+'Unity Play Designs/play7.png')"
+                alt="play design">
+        </div>
 			
-	</div>
-		
-	<div class="ImageContainer">
-		
-		<img src="Unity Play Designs/play5.png"/>
+				  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play8.png"
+                onclick="openModal(
+'Unity Play Designs/play8.png')"
+                alt="play design">
+        </div>
 			
-	</div>
-		<div class="ImageContainer">
+				  <div class="gallery-item">
+            <img src=
+"Unity Play Designs/play9.png"
+                onclick="openModal(
+'Unity Play Designs/play9.png')"
+                alt="play design">
+        </div>
 		
-		<img src="Unity Play Designs/play6.png"/>
-			
-	</div>
+		</div>
 		
-		<div class="ImageContainer">
+	
 		
-		<img src="Unity Play Designs/play7.png"/>
-			
-	</div>
-		
-	<div class="ImageContainer">
-		
-		<img src="Unity Play Designs/play8.png"/>
-			
-	</div>
-		
-	<div class="ImageContainer">
-		
-		<img src="Unity Play Designs/play9.png"/>
-			
-	</div>
-		
-	</div>
+  </div>
+
 	
 	
 	</div>
@@ -86,6 +226,23 @@
 	<div class="Footer">© Hope Geissert, 2024.</div>
 	
 	
+    <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 	
 	
 </html>

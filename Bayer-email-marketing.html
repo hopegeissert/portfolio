@@ -33,51 +33,210 @@
 
 </div>
 	
+<div class="row">
+ <div class="column">
+      <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email1.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email1.jpg')"
+                alt="email 1">
+        </div>
+	 
+	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email2.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email2.jpg')"
+                alt="email 2">
+        </div>
+	 
+	     <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email4.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email4.jpg')"
+                alt="email 4">
+        </div>
+	 
+	 
+	  
+ </div>
+		
+		
+			
+<div class="column">
 	
-	<div class="ImageWrapper">
+	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email5.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email5.jpg')"
+                alt="email 5">
+        </div>
+	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email6.gif"
+                onclick="openModal(
+'Bayer Email Marketing/email6.gif')"
+                alt="email 6">
+        </div>
+	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email7.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email7.jpg')"
+                alt="email 7">
+        </div>
+	   
+</div>
 		
+
 		
+<div class="column">
 		
-	<div class="ImageContainer">
-		<img src="Bayer Email Marketing/email1.jpg"/>	
-	</div>
-		
-		<div class="ImageContainer">
-		<img src="Bayer Email Marketing/email2.jpg"/>	
-	</div>
+	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email8.gif"
+                onclick="openModal(
+'Bayer Email Marketing/email8.gif')"
+                alt="email 8">
+        </div>
+	
+	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email9.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email9.jpg')"
+                alt="email 9">
+        </div>
+	
+	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email3.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email3.jpg')"
+                alt="email 3">
+        </div>
+	
+	
+</div>	
 	
 		
-		<div class="ImageContainer">
-		<img src="Bayer Email Marketing/email4.jpg"/>	
-	</div>
+  </div>
+	
+<div class="rowsmallscreen">
+ <div class="column">
+      <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email1.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email1.jpg')"
+                alt="email 1">
+        </div>
+	 
+	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email2.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email2.jpg')"
+                alt="email 2">
+        </div>
+	 
+	     <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email4.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email4.jpg')"
+                alt="email 4">
+        </div>
+	 
+	 	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email5.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email5.jpg')"
+                alt="email 5">
+        </div>
+	 
+	  
+ </div>
 		
-		<div class="ImageContainer">
-		<img src="Bayer Email Marketing/email5.jpg"/>	
-	</div>
-		<div class="ImageContainer">
-		<img src="Bayer Email Marketing/email6.gif"/>	
-	</div>
-		<div class="ImageContainer">
-		<img src="Bayer Email Marketing/email7.jpg"/>	
-	</div>
-	<div class="ImageContainer">
-		<img src="Bayer Email Marketing/email8.gif"/>	
-	</div>
-		<div class="ImageContainer">
-		<img src="Bayer Email Marketing/email9.jpg"/>	
-	</div>
 		
-		<div class="ImageContainer">
-		<img src="Bayer Email Marketing/email3.jpg"/>	
-	</div>
-	</div>
+			
+<div class="column">
+	
+   <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email6.gif"
+                onclick="openModal(
+'Bayer Email Marketing/email6.gif')"
+                alt="email 6">
+        </div>
+	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email7.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email7.jpg')"
+                alt="email 7">
+        </div>
+	   
+	<div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email8.gif"
+                onclick="openModal(
+'Bayer Email Marketing/email8.gif')"
+                alt="email 8">
+        </div>
+	
+	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email9.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email9.jpg')"
+                alt="email 9">
+        </div>
+	
+	    <div class="gallery-item-shadow">
+            <img src=
+"Bayer Email Marketing/email3.jpg"
+                onclick="openModal(
+'Bayer Email Marketing/email3.jpg')"
+                alt="email 3">
+        </div>
 	
 	
+</div>
+		
+
+		
+
+	
+		
+  </div>
+	
+		
 	</div>
 	
 	
 	<div class="Footer">© Hope Geissert, 2024.</div>
 	
-	
+	 <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 	
 </html>

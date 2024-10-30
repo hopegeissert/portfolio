@@ -1,5 +1,11 @@
 <!doctype html>
-
+<html lang="en">
+<head>
+  <title>2024-2025 Channel Catalog</title>
+	
+	
+	
+</head>
 <style>
 	.ImageContainer img{
 		 box-shadow: 5px 10px 10px #c8c8c8;
@@ -34,44 +40,197 @@
 </div>
 	
 	
-	<div class="ImageWrapper">
+
+	<div class="row">
+
 		
 		
+			
+<div class="column">
+	
+	     
+	
+	  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel1.png"
+                onclick="openModal(
+'Channel Catalog/channel1.png')"
+                alt="channel cover">
+        </div>
+	
+  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel2.png"
+                onclick="openModal(
+'Channel Catalog/channel2.png')"
+                alt="catalog spread">
+        </div>
+	
+	
+	
+	  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel3.png"
+                onclick="openModal(
+'Channel Catalog/channel3.png')"
+                alt="catalog spread">
+        </div>
+	
+	    
+	   
+</div>
 		
-	<div class="ImageContainer">
-		<img src="Channel Catalog/channel1.png"/>	
-	</div>
+
+		<div class="column">
 		
-		<div class="ImageContainer">
-		<img src="Channel Catalog/channel2.png"/>	
-	</div>
+		  
+			
+			  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel4.png"
+                onclick="openModal(
+'Channel Catalog/channel4.png')"
+                alt="catalog spread">
+        </div>
+		  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel5.png"
+                onclick="openModal(
+'Channel Catalog/channel5.png')"
+                alt="catalog spread">
+        </div>
+		
+		
+		</div>
+		
+		<div class="column">
+		
+		  
+			
+			  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel6.png"
+                onclick="openModal(
+'Channel Catalog/channel6.png')"
+                alt="catalog spread">
+        </div>
+		  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel7.png"
+                onclick="openModal(
+'Channel Catalog/channel7.png')"
+                alt="catalog spread">
+        </div>
+		
+		
+		</div>
 	
 		
-		<div class="ImageContainer">
-		<img src="Channel Catalog/channel3.png"/>	
-	</div>
+  </div>
+ 
+	
+	<div class="rowsmallscreen">
+
 		
-		<div class="ImageContainer">
-		<img src="Channel Catalog/channel4.png"/>	
-	</div>
-		<div class="ImageContainer">
-		<img src="Channel Catalog/channel5.png"/>	
-	</div>
-		<div class="ImageContainer">
-		<img src="Channel Catalog/channel6.png"/>	
-	</div>
-	<div class="ImageContainer">
-		<img src="Channel Catalog/channel7.png"/>	
-	</div>
 		
-	</div>
+			
+<div class="column">
+	
+	     
+	
+	  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel1.png"
+                onclick="openModal(
+'Channel Catalog/channel1.png')"
+                alt="channel cover">
+        </div>
+	
+  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel2.png"
+                onclick="openModal(
+'Channel Catalog/channel2.png')"
+                alt="catalog spread">
+        </div>
+	
+	
+	
+	  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel3.png"
+                onclick="openModal(
+'Channel Catalog/channel3.png')"
+                alt="catalog spread">
+        </div>
+	
+	    <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel4.png"
+                onclick="openModal(
+'Channel Catalog/channel4.png')"
+                alt="catalog spread">
+        </div>  
+	   
+</div>
+		
+
+		<div class="column">
+		
+		  
+			
+			
+		  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel5.png"
+                onclick="openModal(
+'Channel Catalog/channel5.png')"
+                alt="catalog spread">
+        </div>
+		
+		<div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel6.png"
+                onclick="openModal(
+'Channel Catalog/channel6.png')"
+                alt="catalog spread">
+        </div>
+		  <div class="gallery-item-shadow">
+            <img src=
+"Channel Catalog/channel7.png"
+                onclick="openModal(
+'Channel Catalog/channel7.png')"
+                alt="catalog spread">
+        </div>
+		</div>
+		
+	
+	
+		
+  </div>
 	
 	
 	</div>
 	
 	
 	<div class="Footer">© Hope Geissert, 2024.</div>
-	
+	    <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 	
 	
 </html>
