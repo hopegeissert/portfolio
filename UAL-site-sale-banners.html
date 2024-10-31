@@ -1,5 +1,11 @@
-<!doctype html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>United Airlines Site Sale Banners</title>
+	
+	
+	
+</head>
 <style>
 
 	.ImageContainer img{
@@ -12,10 +18,37 @@
 <html><meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon.ico">
-		<div class="TopLinks">
-<a href="index.html">Work</a>
+			<div class="TopLinks">
+		<a href="index.html">Work</a>
 		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+		<a href="aboutme.html" target="_blank">About Me</a>
 		</div>	
+		
+		
+
+		<div class="MobileNavWrapper">
+		<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Work</a>
+		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+		<a href="aboutme.html" target="_blank">About Me</a>
+  </div>
+</div>
+
+
+
+<span style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()">&#9776; </span>
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 
 	<div class="ContentWrapper">
 	
@@ -25,44 +58,125 @@
 
 </div>
 	
+
 	
-	<div class="ImageWrapper">
-	<div class="ImageContainer">
+	<div class="rowSiteSale">
+
 		
-		<img src="United Airlines Site Sale Banners/sitesalefirst.png"/>
-			
-	</div>
+<div class="columnSiteSale">
+	  <div class="gallery-item-outline">
+            <img src=
+"United Airlines Site Sale Banners/sitesalefirst.png"
+                onclick="openModal(
+'United Airlines Site Sale Banners/sitesalefirst.png')"
+                alt="United Airlines Site Sale Banner">
+        </div>	
 		
-			<div class="ImageContainer">
+</div>
+	<div class="columnSiteSale">
+	  <div class="gallery-item-outline">
+            <img src=
+"United Airlines Site Sale Banners/sitesalesecond.png"
+                onclick="openModal(
+'United Airlines Site Sale Banners/sitesalesecond.png')"
+                alt="United Airlines Site Sale Banner">
+        </div>	
 		
-		<img src="United Airlines Site Sale Banners/sitesalesecond.png"/>
-			
-	</div>
+</div>	
+	
+	<div class="columnSiteSale">
+	  <div class="gallery-item-outline">
+            <img src=
+"United Airlines Site Sale Banners/sitesalethird.png"
+                onclick="openModal(
+'United Airlines Site Sale Banners/sitesalethird.png')"
+                alt="United Airlines Site Sale Banner">
+        </div>	
 		
-			<div class="ImageContainer">
+</div>			
 		
-		<img src="United Airlines Site Sale Banners/sitesalethird.png"/>
-			
-	</div>
+		<div class="columnSiteSale">
+	  <div class="gallery-item-outline">
+            <img src=
+"United Airlines Site Sale Banners/sitesalefourth.png"
+                onclick="openModal(
+'United Airlines Site Sale Banners/sitesalefourth.png')"
+                alt="United Airlines Site Sale Banner">
+        </div>	
 		
-			<div class="ImageContainer">
+</div>	
 		
-		<img src="United Airlines Site Sale Banners/sitesalefourth.png"/>
-			
-	</div>
-		
+  </div>
+	
 	
 		
+	<div class="rowsmallscreen">
+
+		
+<div class="columnSiteSale">
+	  <div class="gallery-item-outline">
+            <img src=
+"United Airlines Site Sale Banners/sitesalefirst.png"
+                onclick="openModal(
+'United Airlines Site Sale Banners/sitesalefirst.png')"
+                alt="United Airlines Site Sale Banner">
+        </div>	
+	
+	  <div class="gallery-item-outline">
+            <img src=
+"United Airlines Site Sale Banners/sitesalesecond.png"
+                onclick="openModal(
+'United Airlines Site Sale Banners/sitesalesecond.png')"
+                alt="United Airlines Site Sale Banner">
+        </div>	
+		
+</div>
 	
 	
-	</div>
+	<div class="columnSiteSale">
+	  <div class="gallery-item-outline">
+            <img src=
+"United Airlines Site Sale Banners/sitesalethird.png"
+                onclick="openModal(
+'United Airlines Site Sale Banners/sitesalethird.png')"
+                alt="United Airlines Site Sale Banner">
+        </div>	
+		
+		  <div class="gallery-item-outline">
+            <img src=
+"United Airlines Site Sale Banners/sitesalefourth.png"
+                onclick="openModal(
+'United Airlines Site Sale Banners/sitesalefourth.png')"
+                alt="United Airlines Site Sale Banner">
+        </div>	
+		
+</div>			
+	
+		
+  </div>
 	
 	
 	</div>
 	
 	<div class="Footer">© Hope Geissert, 2024.</div>
 	
-	
+				   <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
 	
 	
 </html>
