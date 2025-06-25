@@ -1,4 +1,8 @@
 <!doctype html>
+
+
+
+
 <html lang="en">
 <head>
   <title>Bayer Site Redesign</title>
@@ -58,8 +62,11 @@ function closeNav() {
 	
 	<div class="ProjectTitle">Bayer Site Redesign</div>
 	
-	<div class="ProjectDescription">Bayer was ready for a fresh look and feel to their site in 2024, so I was asked to come up with a completely new design. I had to learn their brand and what features are important to their shoppers. After learning that headwear is their biggest seller, I developed a new hero image feature all about headwear. I created a “shop by brand” section with easy-to-find logos to make navigating the site more user friendly for any Bayer shopper. I used some of the new creative photography that was done in the spring to enhance the look of the new site. 
-
+	<div class="ProjectDescription">
+		I have been the Art Director for Bayer since the fall of 2023. I was asked to come up with a completely new design in 2024. I had to learn their brand and what features are important to their shoppers. After learning that headwear is their biggest seller, I developed a new hero image feature all about headwear. I created a “Shop by Brand” section with easy-to-find logos to make navigating the site more user friendly for any Bayer shopper. I used some of the new creative photography that was done in the spring to enhance the look of the new site. In 2025, I expanded upon this new look and added a "Shop by Category" section and revamped the styling of the background and homepage imagery. It matches the style of the 2025 merchandise catalog as well. 
+		
+		
+		
 
 </div>
 	
@@ -88,7 +95,7 @@ function closeNav() {
 	
 	    <div class="gallery-item">
 			
-			Updated Site Design
+			2024 Site Design 
             <img src=
 "Bayer Site Redesign/bayer-redesign.png"
                 onclick="openModal(
@@ -98,6 +105,60 @@ function closeNav() {
 	    
 	   
 </div>
+	
+	
+	
+<div class="column-small">
+	
+	    <div class="gallery-item">
+			
+			2025 Site Design 
+	<video 
+  src="Bayer Site Redesign/Bayer25-home.mp4" 
+  muted 
+  playsinline 
+  autoplay 
+  loop 
+  controls
+  style="width: 100%; cursor: pointer;"
+  onclick="openVideoModal()">
+</video>
+
+<!-- Modal structure -->
+<div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <span class="close-video" onclick="closeVideoModal()">&times;</span>
+    <video 
+      id="modalVideo" 
+      src="Bayer Site Redesign/Bayer25-home.mp4" 
+      controls 
+      autoplay>
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<script>
+  function openVideoModal() {
+    document.getElementById('videoModal').style.display = 'block';
+    document.getElementById('modalVideo').play();
+  }
+
+  function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('modalVideo');
+    video.pause();
+    video.currentTime = 0;
+    modal.style.display = 'none';
+  }
+</script>
+	    
+	   
+</div>	
+	
+	
+	
+	
 		
 
 		
@@ -130,7 +191,7 @@ function closeNav() {
 	
 	    <div class="gallery-item">
 			
-			Updated Site Design
+			2024 Site Design
             <img src=
 "Bayer Site Redesign/bayer-redesign.png"
                 onclick="openModal(
@@ -142,7 +203,54 @@ function closeNav() {
 </div>
 		
 
-		
+	<div class="column-small">
+	
+	    <div class="gallery-item">
+			
+			2025 Site Design
+         	<video 
+  src="Bayer Site Redesign/Bayer25-home.mp4" 
+  muted 
+  playsinline 
+  autoplay 
+  loop 
+  controls
+  style="width: 100%; cursor: pointer;"
+  onclick="openVideoModal()">
+</video>
+
+<!-- Modal structure -->
+<div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <span class="close-video" onclick="closeVideoModal()">&times;</span>
+    <video 
+      id="modalVideo" 
+      src="Bayer Site Redesign/Bayer25-home.mp4" 
+      controls 
+      autoplay>
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<script>
+  function openVideoModal() {
+    document.getElementById('videoModal').style.display = 'block';
+    document.getElementById('modalVideo').play();
+  }
+
+  function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const video = document.getElementById('modalVideo');
+    video.pause();
+    video.currentTime = 0;
+    modal.style.display = 'none';
+  }
+</script>
+        </div>
+	    
+	   
+</div>	
 	
 	
 		
@@ -150,7 +258,7 @@ function closeNav() {
 	
 	</div>
 	
-	
+	</div>
 	
 	<div class="Footer">© Hope Geissert, 2024.</div>
 	
@@ -173,3 +281,54 @@ function closeNav() {
     </script>
 	
 </html>
+	
+	
+	
+	
+	<style>
+	/* Modal backdrop */
+  .video-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+  }
+
+  /* Video container inside modal */
+  .video-modal-content {
+    position: relative;
+    margin: 5% auto;
+    width: 90%;
+    max-width: 960px;
+  }
+
+  .video-modal video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Close button */
+  .close-video {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: #fff;
+    font-size: 36px;
+    cursor: pointer;
+  }
+
+  /* Preview video */
+  .preview-video {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+  }
+	
+	</style>
