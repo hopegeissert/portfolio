@@ -292,10 +292,24 @@ font-family: 'EB Garamond';
 		   padding-top:50px;
 }
 
+	   .rowBayer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+		   justify-content: center;
+		   padding-top:50px;
+}
+
+
 
    .rowsmallscreen {
  display:none;
 }
+
+   .rowsmallscreenBayer {
+ display:none;
+}
+
 
   .rowsmallest {
  display:none;
@@ -375,6 +389,10 @@ font-family: 'EB Garamond';
 		padding-top:0px;
 	}
 	
+	.rowBayer{
+		padding-top:0px;
+	}
+	
 	.MainLogo{
 		padding-top:50px;
 		
@@ -429,6 +447,8 @@ font-family: 'EB Garamond';
         padding-right: 10px;
 	}
 	
+
+	
 	.row{
 		display:none;
 	}
@@ -440,6 +460,8 @@ font-family: 'EB Garamond';
 	.rowSiteSale{
 		display:none;
 	}
+	
+	
 	
 	.column {
     flex: 25%;
@@ -471,6 +493,18 @@ font-family: 'EB Garamond';
 		display:none;
 	}
 	
+	.rowBayer{
+		display:none;
+	}
+		.rowsmallscreenBayer{
+		 display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+		   justify-content: center;
+		   padding-top:50px;
+		        padding-left: 10px;
+        padding-right: 10px;
+	}
 }
 
 /* Hamburger Menu */
@@ -549,4 +583,59 @@ font-family: 'EB Garamond';
   right: 35px;
   }
 }
+
+
+
+
+
+/* Modal backdrop */
+
+video {
+    padding-top: 6px;
+}
+
+  .video-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+  }
+
+  /* Video container inside modal */
+  .video-modal-content {
+    position: relative;
+    margin: 5% auto;
+    width: 90%;
+    max-width: 960px;
+  }
+
+  .video-modal video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Close button */
+  .close-video {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: #fff;
+    font-size: 36px;
+    cursor: pointer;
+  }
+
+  /* Preview video */
+  .preview-video {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+  }
+	
 	
