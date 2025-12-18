@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UHG Living Lookbook</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        .ImageContainer img{
+            box-shadow: 5px 10px 10px #c8c8c8;
+            max-width:800px!important;
+        }
+        .ImageText{
+            padding-bottom:10px;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top Navigation -->
+<nav class="TopLinks" aria-label="Main Navigation">
+    <a href="index.html">Work</a>
+    <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+    <a href="aboutme.html" target="_blank">About Me</a>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="MobileNavWrapper">
+    <div id="myNav" class="overlay" aria-hidden="true">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+        <div class="overlay-content">
+            <a href="index.html">Work</a>
+            <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+            <a href="aboutme.html" target="_blank">About Me</a>
+        </div>
+    </div>
+    <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
+            onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        document.getElementById("myNav").setAttribute('aria-hidden', 'false');
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        document.getElementById("myNav").setAttribute('aria-hidden', 'true');
+    }
+</script>
+
+<main class="ContentWrapper">
+    <h1 class="ProjectTitle">UHG Living Lookbook</h1>
+    <p class="ProjectDescription">
+        Early in 2025, I was asked to develop an alternative to Issuu flip book idea generators for UHG, which were being blocked by the company’s firewall. I created an interactive, non-transactional site to generate ideas and showcase current trends. The solution is fully responsive, highly engaging for users, and provides a modern framework for future updates—all seamlessly integrated within our eStore platform.
+    </p>
+
+    <!-- Desktop Gallery -->
+    <section class="row" aria-label="UHG Living Lookbook Gallery">
+        <div class="column">
+            <div class="gallery-item-shadow">
+                <img src="UHG Living Lookbook 25/Living-Lookbook-Home.jpg"
+                     onclick="openModal('UHG Living Lookbook 25/Living-Lookbook-Home.jpg')"
+                     alt="UHG Living Lookbook homepage design">
+            </div>
+        </div>
+		
+		
+		 <div class="column">
+            <div class="gallery-item-shadow">
+                <img src="UHG Living Lookbook 25/Inside-page.jpg"
+                     onclick="openModal('UHG Living Lookbook 25/Inside-page.jpg')"
+                     alt="UHG Living Lookbook homepage design">
+            </div>
+        </div>
+		
+		
+    </section>
+
+    <!-- Mobile Gallery -->
+    <section class="rowsmallscreen" aria-label="Mobile UHG Living Lookbook Gallery">
+        <div class="column">
+            <div class="gallery-item-shadow">
+                <img src="UHG Living Lookbook 25/Living-Lookbook-Home.jpg"
+                     onclick="openModal('UHG Living Lookbook 25/Living-Lookbook-Home.jpg')"
+                     alt="UHG Living Lookbook Inside Page">
+            </div>
+			 <div class="gallery-item-shadow">
+                <img src="UHG Living Lookbook 25/Inside-page.jpg"
+                     onclick="openModal('UHG Living Lookbook 25/Inside-page.jpg')"
+                     alt="UHG Living Lookbook Inside Page">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="Footer">
+    © Hope Geissert, <span id="currentYear"></span>.
+</footer>
+
+<script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+<!-- Modal for Image Display -->
+<div id="myModal" class="modal" aria-hidden="true" role="dialog" aria-label="Image Modal">
+    <button class="close" onclick="closeModal()" aria-label="Close Image Modal">&times;</button>
+    <img class="modal-content" id="modalImage" alt="Expanded Channel website image">
+</div>
+
+<script>
+    function openModal(src) {
+        document.getElementById("modalImage").src = src;
+        document.getElementById("myModal").style.display = "block";
+        document.getElementById("myModal").setAttribute('aria-hidden', 'false');
+    }
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+        document.getElementById("myModal").setAttribute('aria-hidden', 'true');
+    }
+</script>
+
+</body>
+</html>
