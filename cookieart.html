@@ -1,343 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Cookie Art</title>
-	
-	
-	
+    <meta charset="UTF-8">
+    <title>Cookie Art</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        .ImageContainer img{
+            /* preserve existing styles */
+        }
+    </style>
 </head>
-<style>
+<body>
 
-	.ImageContainer img{
-		
-	}
-</style>
-
-
-<html><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="favicon.ico">
-			<div class="TopLinks">
-		<a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-		</div>	
-		
-		
-
-		<div class="MobileNavWrapper">
-		<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
+<!-- Top Navigation -->
+<nav class="TopLinks" aria-label="Main Navigation">
     <a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-  </div>
+    <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+    <a href="aboutme.html" target="_blank">About Me</a>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="MobileNavWrapper">
+    <div id="myNav" class="overlay" aria-hidden="true">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+        <div class="overlay-content">
+            <a href="index.html">Work</a>
+            <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+            <a href="aboutme.html" target="_blank">About Me</a>
+        </div>
+    </div>
+    <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
+            onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
 </div>
 
-
-
-<span style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
 <script>
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").setAttribute('aria-hidden', 'false');
 }
-
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").setAttribute('aria-hidden', 'true');
 }
-</script>	
-
-	<div class="ContentWrapper">
-	
-	<div class="ProjectTitle">Cookie Design</div>
-	
-	<div class="ProjectDescription">I learned how to create artistic sugar cookies during the pandemic when a lot of people learned new skills and picked up new hobbies. I enjoy creating these upon request and for special events. It gives me a unique opportunity to create a little piece of art to share!
-
-</div>
-	
-	
-<div class="row">
-  <div class="column">
-      <div class="gallery-item">
-            <img src=
-"Cookie Art/baby-shower.jpg"
-                onclick="openModal(
-'Cookie Art/baby-shower.jpg')"
-                alt="baby shower cookie">
-        </div>
-	  
-	  <div class="gallery-item">
-            <img src=
-"Cookie Art/dawson-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/dawson-cookies.jpg')"
-                alt="Dawson baptism cookies">
-        </div>
-	  
-	  <div class="gallery-item">
-            <img src=
-"Cookie Art/cross-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/cross-cookies.jpg')"
-                alt="Cross cookies">
-        </div>
-	  
-	  
-	
-		
-			
-	  
-  </div>
-		
-		
-		
-		
-		
-		
-   <div class="column">
-	   
-	   	<div class="gallery-item">
-            <img src=
-"Cookie Art/baptism-cookie.jpg"
-                onclick="openModal(
-'Cookie Art/baptism-cookie.jpg')"
-                alt="baptism cookies">
-        </div>
-	   
-	    <div class="gallery-item">
-            <img src=
-"Cookie Art/anni-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/anni-cookies.jpg')"
-                alt="anniversary cookies">
-        </div>
-	     <div class="gallery-item">
-            <img src=
-"Cookie Art/volleyball-cookie.jpg"
-                onclick="openModal(
-'Cookie Art/volleyball-cookie.jpg')"
-                alt="volleyball cookies">
-        </div>
-      <div class="gallery-item">
-            <img src=
-"Cookie Art/2022cookies.jpg"
-                onclick="openModal(
-'Cookie Art/2022cookies.jpg')"
-                alt="2022 cookies">
-        </div>
-	  
-     
-	   
-	  
-	   
-
-	   
-	    
-	   
-	   
-        </div>
-		
-	<div class="column">
-		
-		<div class="gallery-item">
-            <img src=
-"Cookie Art/leaf-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/leaf-cookies.jpg')"
-                alt="leaf design cookies">
-        </div>	
-		
-		 <div class="gallery-item">
-            <img src=
-"Cookie Art/marce-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/marce-cookies.jpg')"
-                alt="Marce birthday cookies">
-        </div>  
-		
-	  <div class="gallery-item">
-            <img src=
-"Cookie Art/retire-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/retire-cookies.jpg')"
-                alt="retirement party cookies">
-        </div>	
-		
-	<div class="gallery-item">
-            <img src=
-"Cookie Art/heartcookies.jpg"
-                onclick="openModal(
-'Cookie Art/heartcookies.jpg')"
-                alt="heart cookies">
-        </div> 
-	  
-	   <div class="gallery-item">
-            <img src=
-"Cookie Art/cookie-art.jpg"
-                onclick="openModal(
-'Cookie Art/cookie-art.jpg')"
-                alt="Chiefs Cookies">
-        </div>
-	   
-	    
-		
-		
-		
-	</div>	
-		
-		
-  </div>
- 
-<div class="rowsmallscreen">
-  <div class="column">
-      <div class="gallery-item">
-            <img src=
-"Cookie Art/baby-shower.jpg"
-                onclick="openModal(
-'Cookie Art/baby-shower.jpg')"
-                alt="baby shower cookie">
-        </div>
-	  
-	  <div class="gallery-item">
-            <img src=
-"Cookie Art/dawson-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/dawson-cookies.jpg')"
-                alt="Dawson baptism cookies">
-        </div>
-	  
-	  <div class="gallery-item">
-            <img src=
-"Cookie Art/cross-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/cross-cookies.jpg')"
-                alt="Cross cookies">
-        </div>
-	  
-	     	<div class="gallery-item">
-            <img src=
-"Cookie Art/baptism-cookie.jpg"
-                onclick="openModal(
-'Cookie Art/baptism-cookie.jpg')"
-                alt="baptism cookies">
-        </div>
-	   
-	    <div class="gallery-item">
-            <img src=
-"Cookie Art/anni-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/anni-cookies.jpg')"
-                alt="anniversary cookies">
-        </div>
-	     <div class="gallery-item">
-            <img src=
-"Cookie Art/volleyball-cookie.jpg"
-                onclick="openModal(
-'Cookie Art/volleyball-cookie.jpg')"
-                alt="volleyball cookies">
-        </div>
-	
-		
-			
-	  
-  </div>
-		
-		
-		
-		
-		
-		
-   <div class="column">
-	   
-	
-      <div class="gallery-item">
-            <img src=
-"Cookie Art/2022cookies.jpg"
-                onclick="openModal(
-'Cookie Art/2022cookies.jpg')"
-                alt="2022 cookies">
-        </div>
-	  
-     
-	   
-	  		<div class="gallery-item">
-            <img src=
-"Cookie Art/leaf-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/leaf-cookies.jpg')"
-                alt="leaf design cookies">
-        </div>	
-		
-		 <div class="gallery-item">
-            <img src=
-"Cookie Art/marce-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/marce-cookies.jpg')"
-                alt="Marce birthday cookies">
-        </div>  
-		
-	  <div class="gallery-item">
-            <img src=
-"Cookie Art/retire-cookies.jpg"
-                onclick="openModal(
-'Cookie Art/retire-cookies.jpg')"
-                alt="retirement party cookies">
-        </div>	
-		
-	<div class="gallery-item">
-            <img src=
-"Cookie Art/heartcookies.jpg"
-                onclick="openModal(
-'Cookie Art/heartcookies.jpg')"
-                alt="heart cookies">
-        </div> 
-	  
-	   <div class="gallery-item">
-            <img src=
-"Cookie Art/cookie-art.jpg"
-                onclick="openModal(
-'Cookie Art/cookie-art.jpg')"
-                alt="Chiefs Cookies">
-        </div>
-	   
-
-	   
-	    
-	   
-	   
-        </div>
-		
-	
-		
-		
-  </div>
-	
-	
-	</div>
-	
-	<div class="Footer">© Hope Geissert, <span id="currentYear"></span>.</div>
-	<script>
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
 </script>
-	
-	 <!-- Modal for Image Display -->
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
 
-    <!-- JavaScript for Modal -->
-    <script>
-        function openModal(src) {
-            document.getElementById("modalImage").src = src;
-            document.getElementById("myModal").style.display = "block";
-        }
+<main class="ContentWrapper">
+    <h1 class="ProjectTitle">Cookie Design</h1>
+    <p class="ProjectDescription">
+        I learned how to create artistic sugar cookies during the pandemic. I enjoy creating these upon request and for special events, offering a unique way to share a little piece of art!
+    </p>
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-    </script>
-	
+    <!-- Desktop Gallery -->
+    <section class="row" aria-label="Cookie Art Gallery">
+        <div class="column">
+            <div class="gallery-item"><img src="Cookie Art/baby-shower.jpg" onclick="openModal('Cookie Art/baby-shower.jpg')" alt="Baby shower cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/dawson-cookies.jpg" onclick="openModal('Cookie Art/dawson-cookies.jpg')" alt="Dawson baptism cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/cross-cookies.jpg" onclick="openModal('Cookie Art/cross-cookies.jpg')" alt="Cross cookies"></div>
+        </div>
+
+        <div class="column">
+            <div class="gallery-item"><img src="Cookie Art/baptism-cookie.jpg" onclick="openModal('Cookie Art/baptism-cookie.jpg')" alt="Baptism cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/anni-cookies.jpg" onclick="openModal('Cookie Art/anni-cookies.jpg')" alt="Anniversary cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/volleyball-cookie.jpg" onclick="openModal('Cookie Art/volleyball-cookie.jpg')" alt="Volleyball cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/2022cookies.jpg" onclick="openModal('Cookie Art/2022cookies.jpg')" alt="2022 cookies"></div>
+        </div>
+
+        <div class="column">
+            <div class="gallery-item"><img src="Cookie Art/leaf-cookies.jpg" onclick="openModal('Cookie Art/leaf-cookies.jpg')" alt="Leaf design cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/marce-cookies.jpg" onclick="openModal('Cookie Art/marce-cookies.jpg')" alt="Marce birthday cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/retire-cookies.jpg" onclick="openModal('Cookie Art/retire-cookies.jpg')" alt="Retirement party cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/heartcookies.jpg" onclick="openModal('Cookie Art/heartcookies.jpg')" alt="Heart cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/cookie-art.jpg" onclick="openModal('Cookie Art/cookie-art.jpg')" alt="Chiefs cookies"></div>
+        </div>
+    </section>
+
+    <!-- Mobile Gallery -->
+    <section class="rowsmallscreen" aria-label="Mobile Cookie Art Gallery">
+        <div class="column">
+            <div class="gallery-item"><img src="Cookie Art/baby-shower.jpg" onclick="openModal('Cookie Art/baby-shower.jpg')" alt="Baby shower cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/dawson-cookies.jpg" onclick="openModal('Cookie Art/dawson-cookies.jpg')" alt="Dawson baptism cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/cross-cookies.jpg" onclick="openModal('Cookie Art/cross-cookies.jpg')" alt="Cross cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/baptism-cookie.jpg" onclick="openModal('Cookie Art/baptism-cookie.jpg')" alt="Baptism cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/anni-cookies.jpg" onclick="openModal('Cookie Art/anni-cookies.jpg')" alt="Anniversary cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/volleyball-cookie.jpg" onclick="openModal('Cookie Art/volleyball-cookie.jpg')" alt="Volleyball cookies"></div>
+        </div>
+
+        <div class="column">
+            <div class="gallery-item"><img src="Cookie Art/2022cookies.jpg" onclick="openModal('Cookie Art/2022cookies.jpg')" alt="2022 cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/leaf-cookies.jpg" onclick="openModal('Cookie Art/leaf-cookies.jpg')" alt="Leaf design cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/marce-cookies.jpg" onclick="openModal('Cookie Art/marce-cookies.jpg')" alt="Marce birthday cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/retire-cookies.jpg" onclick="openModal('Cookie Art/retire-cookies.jpg')" alt="Retirement party cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/heartcookies.jpg" onclick="openModal('Cookie Art/heartcookies.jpg')" alt="Heart cookies"></div>
+            <div class="gallery-item"><img src="Cookie Art/cookie-art.jpg" onclick="openModal('Cookie Art/cookie-art.jpg')" alt="Chiefs cookies"></div>
+        </div>
+    </section>
+</main>
+
+<footer class="Footer">© Hope Geissert, <span id="currentYear"></span>.</footer>
+<script>
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+<!-- Modal for Image Display -->
+<div id="myModal" class="modal" aria-hidden="true" role="dialog" aria-label="Cookie Modal">
+    <button class="close" onclick="closeModal()" aria-label="Close Image Modal">&times;</button>
+    <img class="modal-content" id="modalImage" alt="Expanded cookie image">
+</div>
+
+<script>
+function openModal(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("myModal").setAttribute('aria-hidden','false');
+}
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+    document.getElementById("myModal").setAttribute('aria-hidden','true');
+}
+</script>
+
+</body>
 </html>

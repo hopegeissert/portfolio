@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2025-2026 DADD Catalog</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <style>
+    .ImageContainer img{
+      box-shadow: 5px 10px 10px #c8c8c8;
+      max-width:800px!important;
+    }
+    .ImageText{
+      padding-bottom:10px;
+      font-size:20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding:40px;
+    }
+    .gallery-item-shadow {
+      flex: 1 1 30%;
+      display: flex;
+      justify-content: center;
+    }
+    .gallery-item-shadow img {
+      width: 100%;
+      height: auto;
+      box-shadow: 5px 10px 10px #c8c8c8;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .gallery-item-shadow { flex: 1 1 45%; }
+    }
+    @media (max-width: 480px) {
+      .gallery-item-shadow { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="TopLinks" aria-label="Main navigation">
+      <a href="index.html">Work</a>
+      <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+      <a href="aboutme.html" target="_blank">About Me</a>
+    </nav>
+
+    <div class="MobileNavWrapper">
+      <div id="myNav" class="overlay" role="dialog" aria-modal="true" aria-labelledby="mobileNavLabel">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close navigation">&times;</button>
+        <div class="overlay-content">
+          <a href="index.html">Work</a>
+          <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+          <a href="aboutme.html" target="_blank">About Me</a>
+        </div>
+      </div>
+      <button style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()" aria-label="Open navigation">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="ContentWrapper">
+    <h1 class="ProjectTitle">2025-2026 DADD Catalog</h1>
+    <p class="ProjectDescription">
+      Instead of a printed catalog, this year’s collection was showcased online, offering an accessible and visually engaging way to browse the new merchandise. I guided the photography with moody, immersive lighting and structured the catalog around a geometric layout to create a modern, dynamic presentation.
+    </p>
+
+    <section class="gallery" aria-label="DADD Catalog Image Gallery">
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_01.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 01">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_03.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 03">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_04.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 04">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_05.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 05">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_06.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 06">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_09.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 09">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_10.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 10">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_11.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 11">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_13.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 13">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_14.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 14">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_18.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 18">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_19.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 19">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_20.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 20">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_21.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 21">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_24.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 24">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-DEKALB_Page_27.jpg" onclick="openModal(this.src)" alt="DADD Catalog Page 27">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-Asgrow_Page_3.jpg" onclick="openModal(this.src)" alt="DADD Catalog Asgrow Page 3">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-Asgrow_Page_4.jpg" onclick="openModal(this.src)" alt="DADD Catalog Asgrow Page 4">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-Asgrow_Page_5.jpg" onclick="openModal(this.src)" alt="DADD Catalog Asgrow Page 5">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="DADD 2025 Catalog Photos/DADD-2025-Catalog-Asgrow_Page_7.jpg" onclick="openModal(this.src)" alt="DADD Catalog Asgrow Page 7">
+      </div>
+    </section>
+  </main>
+
+  <footer class="Footer">
+    © Hope Geissert, <span id="currentYear"></span>.
+  </footer>
+
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+    function openNav() { document.getElementById("myNav").style.width = "100%"; }
+    function closeNav() { document.getElementById("myNav").style.width = "0%"; }
+
+    function openModal(src) {
+      const modal = document.getElementById("myModal");
+      const modalImage = document.getElementById("modalImage");
+      modalImage.src = src;
+      modal.style.display = "block";
+      modalImage.focus();
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
+
+  <!-- Modal for Image Display -->
+  <div id="myModal" class="modal" role="dialog" aria-modal="true" aria-label="Image preview" tabindex="-1">
+    <button class="close" onclick="closeModal()" aria-label="Close image preview">&times;</button>
+    <img class="modal-content" id="modalImage" alt="">
+  </div>
+</body>
+</html>
