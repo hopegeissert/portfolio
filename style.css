@@ -10,6 +10,15 @@ body {
 	margin: auto;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
 
 .MainLogo {
 	padding-top:30px;
