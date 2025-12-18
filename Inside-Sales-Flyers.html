@@ -1,366 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Inside Sales Flyers</title>
-	
-	
-	
+    <meta charset="UTF-8">
+    <title>Inside Sales Flyers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        .ImageContainer img{
+            /* preserve existing styles */
+        }
+    </style>
 </head>
-<style>
+<body>
 
-	.ImageContainer img{
-		
-	}
-</style>
-
-
-<html><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="favicon.ico">
-			<div class="TopLinks">
-		<a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-		</div>	
-		
-		
-
-		<div class="MobileNavWrapper">
-		<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
+<!-- Top Navigation -->
+<nav class="TopLinks" aria-label="Main Navigation">
     <a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-  </div>
+    <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+    <a href="aboutme.html" target="_blank">About Me</a>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="MobileNavWrapper">
+    <div id="myNav" class="overlay" aria-hidden="true">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+        <div class="overlay-content">
+            <a href="index.html">Work</a>
+            <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+            <a href="aboutme.html" target="_blank">About Me</a>
+        </div>
+    </div>
+    <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
+            onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
 </div>
 
-
-
-<span style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
 <script>
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").setAttribute('aria-hidden', 'false');
 }
-
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").setAttribute('aria-hidden', 'true');
 }
-</script>	
-
-	<div class="ContentWrapper">
-	
-	<div class="ProjectTitle">Flyers for Inside Sales Team at SPP</div>
-	
-	<div class="ProjectDescription">For a few years now, I have been the dedicated Art Director for the inside sales team at SPP. They reach out to me for any type of promotional marketing flyers they may need. I adapt quickly to learn the brand that is being featured, and I put together cohesive and easy-to-digest flyers using the images and information I’m given. These are often quick-turn projects and have really helped out the sales team in distributing their ideas efficiently.
-
-</div>
-	
-	
-
-	
-	<div class="row">
-  <div class="column">
-      <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer1.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer1.png')"
-                alt="flyer 1">
-        </div>
-	  
-	  <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer3.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer3.png')"
-                alt="flyer 3">
-        </div>
-	  
-	 
-	  
-	  
-	   <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer4.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer4.png')"
-                alt="flyer 4">
-        </div>
-		
-			<div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer5.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer5.png')"
-                alt="flyer 5">
-        </div>	
-	  
-	     <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer6.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer6.png')"
-                alt="flyer 6">
-        </div>
-	  
-  </div>
-		
-		
-		
-		
-		
-		
-   <div class="column">
-	   
-	   
-	 
-	   
-	   
-	   
-	 
-	     
-	  
-     
-	   
-	  	<div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer7.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer7.png')"
-                alt="flyer 7">
-        </div>
-	   
-     <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer2.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer2.png')"
-                alt="flyer 2">
-        </div>
-		
-		<div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer8.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer8.png')"
-                alt="flyer 8">
-        </div>
-	   
-	     <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer9.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer9.png')"
-                alt="flyer 9">
-        </div>
-	   
-	   
-        </div>
-		
-	<div class="column">
-		
-	
- 	
-		
-		  
-		
-	 
-	    <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer10.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer10.png')"
-                alt="flyer 10">
-        </div> 
-	    
-		   <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer11.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer11.png')"
-                alt="flyer 11">
-        </div> 
-	    	   <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer12.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer12.png')"
-                alt="flyer 12">
-        </div> 
-		 <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer13.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer13.png')"
-                alt="flyer 13">
-        </div> 
-		
-	</div>	
-		
-		
-  </div>
- 
-		<div class="rowsmallscreen">
-  <div class="column">
-      <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer1.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer1.png')"
-                alt="flyer 1">
-        </div>
-	  
-	  <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer3.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer3.png')"
-                alt="flyer 3">
-        </div>
-	  
-	 
-	  
-	  
-	   <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer4.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer4.png')"
-                alt="flyer 4">
-        </div>
-		
-			<div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer5.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer5.png')"
-                alt="flyer 5">
-        </div>	
-	  
-	     <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer6.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer6.png')"
-                alt="flyer 6">
-        </div>
-	  
-	  
-	     
-	  	<div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer7.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer7.png')"
-                alt="flyer 7">
-        </div>
-	   
-     <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer2.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer2.png')"
-                alt="flyer 2">
-        </div>
-	  
-  </div>
-		
-		
-		
-		
-		
-		
-   <div class="column">
-	   
-	   
-	 
-	   
-	   
-	   
-	 
-	     
-	  
-     
-	
-		
-		<div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer8.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer8.png')"
-                alt="flyer 8">
-        </div>
-	   
-	     <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer9.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer9.png')"
-                alt="flyer 9">
-        </div>
-	   
-	    <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer10.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer10.png')"
-                alt="flyer 10">
-        </div> 
-	    
-		   <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer11.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer11.png')"
-                alt="flyer 11">
-        </div> 
-	    	   <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer12.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer12.png')"
-                alt="flyer 12">
-        </div> 
-		 <div class="gallery-item">
-            <img src=
-"PDF Sales Flyers/flyer13.png"
-                onclick="openModal(
-'PDF Sales Flyers/flyer13.png')"
-                alt="flyer 13">
-        </div> 
-	   
-        </div>
-		
-
-		
-		
-  </div>
-	
-	</div>
-	
-	<div class="Footer">© Hope Geissert, <span id="currentYear"></span>.</div>
-	<script>
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
 </script>
-	 <!-- Modal for Image Display -->
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
 
-    <!-- JavaScript for Modal -->
-    <script>
-        function openModal(src) {
-            document.getElementById("modalImage").src = src;
-            document.getElementById("myModal").style.display = "block";
-        }
+<main class="ContentWrapper">
+    <h1 class="ProjectTitle">Flyers for Inside Sales Team at SPP</h1>
+    <p class="ProjectDescription">
+        For a few years now, I have been the dedicated Art Director for the inside sales team at SPP. They reach out to me for any type of promotional marketing flyers they may need. I adapt quickly to learn the brand that is being featured, and I put together cohesive and easy-to-digest flyers using the images and information I’m given. These are often quick-turn projects and have really helped out the sales team in distributing their ideas efficiently.
+    </p>
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-    </script>
-	
-	
+    <!-- Desktop Gallery -->
+    <section class="row" aria-label="Inside Sales Flyers Gallery">
+        <div class="column">
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer1.png" onclick="openModal('PDF Sales Flyers/flyer1.png')" alt="Inside Sales Flyer 1"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer3.png" onclick="openModal('PDF Sales Flyers/flyer3.png')" alt="Inside Sales Flyer 3"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer4.png" onclick="openModal('PDF Sales Flyers/flyer4.png')" alt="Inside Sales Flyer 4"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer5.png" onclick="openModal('PDF Sales Flyers/flyer5.png')" alt="Inside Sales Flyer 5"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer6.png" onclick="openModal('PDF Sales Flyers/flyer6.png')" alt="Inside Sales Flyer 6"></div>
+        </div>
+
+        <div class="column">
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer7.png" onclick="openModal('PDF Sales Flyers/flyer7.png')" alt="Inside Sales Flyer 7"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer2.png" onclick="openModal('PDF Sales Flyers/flyer2.png')" alt="Inside Sales Flyer 2"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer8.png" onclick="openModal('PDF Sales Flyers/flyer8.png')" alt="Inside Sales Flyer 8"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer9.png" onclick="openModal('PDF Sales Flyers/flyer9.png')" alt="Inside Sales Flyer 9"></div>
+        </div>
+
+        <div class="column">
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer10.png" onclick="openModal('PDF Sales Flyers/flyer10.png')" alt="Inside Sales Flyer 10"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer11.png" onclick="openModal('PDF Sales Flyers/flyer11.png')" alt="Inside Sales Flyer 11"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer12.png" onclick="openModal('PDF Sales Flyers/flyer12.png')" alt="Inside Sales Flyer 12"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer13.png" onclick="openModal('PDF Sales Flyers/flyer13.png')" alt="Inside Sales Flyer 13"></div>
+        </div>
+    </section>
+
+    <!-- Mobile Gallery -->
+    <section class="rowsmallscreen" aria-label="Mobile Inside Sales Flyers Gallery">
+        <div class="column">
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer1.png" onclick="openModal('PDF Sales Flyers/flyer1.png')" alt="Inside Sales Flyer 1"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer3.png" onclick="openModal('PDF Sales Flyers/flyer3.png')" alt="Inside Sales Flyer 3"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer4.png" onclick="openModal('PDF Sales Flyers/flyer4.png')" alt="Inside Sales Flyer 4"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer5.png" onclick="openModal('PDF Sales Flyers/flyer5.png')" alt="Inside Sales Flyer 5"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer6.png" onclick="openModal('PDF Sales Flyers/flyer6.png')" alt="Inside Sales Flyer 6"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer7.png" onclick="openModal('PDF Sales Flyers/flyer7.png')" alt="Inside Sales Flyer 7"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer2.png" onclick="openModal('PDF Sales Flyers/flyer2.png')" alt="Inside Sales Flyer 2"></div>
+        </div>
+        <div class="column">
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer8.png" onclick="openModal('PDF Sales Flyers/flyer8.png')" alt="Inside Sales Flyer 8"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer9.png" onclick="openModal('PDF Sales Flyers/flyer9.png')" alt="Inside Sales Flyer 9"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer10.png" onclick="openModal('PDF Sales Flyers/flyer10.png')" alt="Inside Sales Flyer 10"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer11.png" onclick="openModal('PDF Sales Flyers/flyer11.png')" alt="Inside Sales Flyer 11"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer12.png" onclick="openModal('PDF Sales Flyers/flyer12.png')" alt="Inside Sales Flyer 12"></div>
+            <div class="gallery-item"><img src="PDF Sales Flyers/flyer13.png" onclick="openModal('PDF Sales Flyers/flyer13.png')" alt="Inside Sales Flyer 13"></div>
+        </div>
+    </section>
+</main>
+
+<footer class="Footer">© Hope Geissert, <span id="currentYear"></span>.</footer>
+<script>
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+<!-- Modal for Image Display -->
+<div id="myModal" class="modal" aria-hidden="true" role="dialog" aria-label="Flyer Modal">
+    <button class="close" onclick="closeModal()" aria-label="Close Image Modal">&times;</button>
+    <img class="modal-content" id="modalImage" alt="Expanded Inside Sales Flyer">
+</div>
+
+<script>
+function openModal(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("myModal").setAttribute('aria-hidden','false');
+}
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+    document.getElementById("myModal").setAttribute('aria-hidden','true');
+}
+</script>
+
+</body>
 </html>

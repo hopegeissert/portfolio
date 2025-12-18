@@ -1,328 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Logo Design</title>
-	
-	
-	
+    <meta charset="UTF-8">
+    <title>Logo Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        .ImageContainer img{
+            /* preserve existing styles */
+        }
+    </style>
 </head>
+<body>
 
-<style>
-
-	.ImageContainer img{
-		
-	}
-</style>
-
-
-<html><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="favicon.ico">
-			<div class="TopLinks">
-		<a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-		</div>	
-		
-		
-
-		<div class="MobileNavWrapper">
-		<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
+<!-- Top Navigation -->
+<nav class="TopLinks" aria-label="Main Navigation">
     <a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-  </div>
+    <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+    <a href="aboutme.html" target="_blank">About Me</a>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="MobileNavWrapper">
+    <div id="myNav" class="overlay" aria-hidden="true">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+        <div class="overlay-content">
+            <a href="index.html">Work</a>
+            <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+            <a href="aboutme.html" target="_blank">About Me</a>
+        </div>
+    </div>
+    <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
+            onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
 </div>
 
-
-
-<span style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
 <script>
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").setAttribute('aria-hidden', 'false');
 }
-
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").setAttribute('aria-hidden', 'true');
 }
 </script>
 
-	<div class="ContentWrapper">
-	
-	<div class="ProjectTitle">Logo Design</div>
-	
-	<div class="ProjectDescription">An old contact from Staples Promotional Products reached out to me when he needed help with a logo for his new business. He told me what type of styles and colors he liked, along with the goal of his business. He started an RV repair business and wanted to feature an RV or truck pulling a camper driving away with mountains, trees, and water in the background. I put together these dynamic designs for his new adventure, and he was very happy with the result.
+<main class="ContentWrapper">
+    <h1 class="ProjectTitle">Logo Design</h1>
+    <p class="ProjectDescription">
+        An old contact from Staples Promotional Products asked for logo designs for his new RV repair business. He wanted dynamic logos featuring an RV or truck pulling a camper, mountains, trees, and water. These are the designs I created.
+    </p>
 
+    <!-- Desktop Gallery -->
+    <section class="row" aria-label="Logo Designs Gallery">
+        <div class="column">
+            <div class="gallery-item"><img src="On the Trail Logos/logos1.jpg" onclick="openModal('On the Trail Logos/logos1.jpg')" alt="Logo design 1"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos2.jpg" onclick="openModal('On the Trail Logos/logos2.jpg')" alt="Logo design 2"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos3.jpg" onclick="openModal('On the Trail Logos/logos3.jpg')" alt="Logo design 3"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos4.jpg" onclick="openModal('On the Trail Logos/logos4.jpg')" alt="Logo design 4"></div>
+        </div>
+        <div class="column">
+            <div class="gallery-item"><img src="On the Trail Logos/logos5.jpg" onclick="openModal('On the Trail Logos/logos5.jpg')" alt="Logo design 5"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos6.jpg" onclick="openModal('On the Trail Logos/logos6.jpg')" alt="Logo design 6"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos7.jpg" onclick="openModal('On the Trail Logos/logos7.jpg')" alt="Logo design 7"></div>
+        </div>
+        <div class="column">
+            <div class="gallery-item"><img src="On the Trail Logos/logos8.jpg" onclick="openModal('On the Trail Logos/logos8.jpg')" alt="Logo design 8"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos9.jpg" onclick="openModal('On the Trail Logos/logos9.jpg')" alt="Logo design 9"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos10.jpg" onclick="openModal('On the Trail Logos/logos10.jpg')" alt="Logo design 10"></div>
+        </div>
+    </section>
 
-</div>
-	
-	
-	
-	<div class="row">
+    <!-- Mobile Gallery -->
+    <section class="rowsmallscreen" aria-label="Mobile Logo Designs Gallery">
+        <div class="column">
+            <div class="gallery-item"><img src="On the Trail Logos/logos1.jpg" onclick="openModal('On the Trail Logos/logos1.jpg')" alt="Logo design 1"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos2.jpg" onclick="openModal('On the Trail Logos/logos2.jpg')" alt="Logo design 2"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos3.jpg" onclick="openModal('On the Trail Logos/logos3.jpg')" alt="Logo design 3"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos4.jpg" onclick="openModal('On the Trail Logos/logos4.jpg')" alt="Logo design 4"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos5.jpg" onclick="openModal('On the Trail Logos/logos5.jpg')" alt="Logo design 5"></div>
+        </div>
+        <div class="column">
+            <div class="gallery-item"><img src="On the Trail Logos/logos6.jpg" onclick="openModal('On the Trail Logos/logos6.jpg')" alt="Logo design 6"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos7.jpg" onclick="openModal('On the Trail Logos/logos7.jpg')" alt="Logo design 7"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos8.jpg" onclick="openModal('On the Trail Logos/logos8.jpg')" alt="Logo design 8"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos9.jpg" onclick="openModal('On the Trail Logos/logos9.jpg')" alt="Logo design 9"></div>
+            <div class="gallery-item"><img src="On the Trail Logos/logos10.jpg" onclick="openModal('On the Trail Logos/logos10.jpg')" alt="Logo design 10"></div>
+        </div>
+    </section>
+</main>
 
-		
-		
-			
-<div class="column">
-	
-	     
-	
-	  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos1.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos1.jpg')"
-                alt="logo design">
-        </div>
-	
-	
-	
-	
-	  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos2.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos2.jpg')"
-                alt="logo design">
-        </div>
-	
-	
-	
-	
-	  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos3.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos3.jpg')"
-                alt="logo design">
-        </div>
-	
-	
-	
-	
-	
-	  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos4.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos4.jpg')"
-                alt="logo design">
-        </div>
-
-	
-	    
-	   
-</div>
-		
-
-		<div class="column">
-		  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos5.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos5.jpg')"
-                alt="logo design">
-        </div>
-			
-			
-			  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos6.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos6.jpg')"
-                alt="logo design">
-        </div>
-			
-			
-			  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos7.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos7.jpg')"
-                alt="logo design">
-        </div>
-		  
-			
-			
-		
-		
-		</div>
-		
-		<div class="column">
-		
-		  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos8.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos8.jpg')"
-                alt="logo design">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos9.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos9.jpg')"
-                alt="logo design">
-        </div>
-		
-		  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos10.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos10.jpg')"
-                alt="logo design">
-        </div>
-		</div>
-	
-		
-  </div>
- 
-
-		<div class="rowsmallscreen">
-
-		
-		
-			
-<div class="column">
-	
-	     
-	
-	  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos1.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos1.jpg')"
-                alt="logo design">
-        </div>
-	
-	
-	
-	
-	  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos2.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos2.jpg')"
-                alt="logo design">
-        </div>
-	
-	
-	
-	
-	  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos3.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos3.jpg')"
-                alt="logo design">
-        </div>
-	
-	
-	
-	
-	
-	  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos4.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos4.jpg')"
-                alt="logo design">
-        </div>
-
-	
-	    <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos5.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos5.jpg')"
-                alt="logo design">
-        </div>
-	   
-</div>
-		
-
-		<div class="column">
-		  
-			
-			
-			  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos6.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos6.jpg')"
-                alt="logo design">
-        </div>
-			
-			
-			  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos7.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos7.jpg')"
-                alt="logo design">
-        </div>
-		  
-			
-			
-		<div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos8.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos8.jpg')"
-                alt="logo design">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos9.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos9.jpg')"
-                alt="logo design">
-        </div>
-		
-		  <div class="gallery-item">
-            <img src=
-"On the Trail Logos/logos10.jpg"
-                onclick="openModal(
-'On the Trail Logos/logos10.jpg')"
-                alt="logo design">
-        </div>
-		
-		</div>
-
-	
-		
-  </div>
-	
-	
-	</div>
-	
-	<div class="Footer">© Hope Geissert, <span id="currentYear"></span>.</div>
-	<script>
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
+<footer class="Footer">© Hope Geissert, <span id="currentYear"></span>.</footer>
+<script>
+document.getElementById("currentYear").textContent = new Date().getFullYear();
 </script>
-	
-    <!-- Modal for Image Display -->
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
 
-    <!-- JavaScript for Modal -->
-    <script>
-        function openModal(src) {
-            document.getElementById("modalImage").src = src;
-            document.getElementById("myModal").style.display = "block";
-        }
+<!-- Modal for Image Display -->
+<div id="myModal" class="modal" role="dialog" aria-hidden="true" aria-label="Logo Image Modal">
+    <button class="close" onclick="closeModal()" aria-label="Close Image Modal">&times;</button>
+    <img class="modal-content" id="modalImage" alt="Expanded logo image">
+</div>
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-    </script>
-	
-	
+<script>
+function openModal(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("myModal").setAttribute('aria-hidden','false');
+}
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+    document.getElementById("myModal").setAttribute('aria-hidden','true');
+}
+</script>
+
+</body>
 </html>

@@ -1,409 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Shirt Designs</title>
-	
-	
-	
+    <meta charset="UTF-8">
+    <title>Shirt Designs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        .ImageContainer img{
+            /* preserve existing styles */
+        }
+    </style>
 </head>
+<body>
 
-<style>
-
-	.ImageContainer img{
-		
-	}
-</style>
-
-
-<html><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="favicon.ico">
-			<div class="TopLinks">
-		<a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-		</div>	
-		
-		
-
-		<div class="MobileNavWrapper">
-		<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
+<!-- Top Navigation -->
+<nav class="TopLinks" aria-label="Main Navigation">
     <a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-  </div>
+    <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+    <a href="aboutme.html" target="_blank">About Me</a>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="MobileNavWrapper">
+    <div id="myNav" class="overlay" aria-hidden="true">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+        <div class="overlay-content">
+            <a href="index.html">Work</a>
+            <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+            <a href="aboutme.html" target="_blank">About Me</a>
+        </div>
+    </div>
+    <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
+            onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
 </div>
 
-
-
-<span style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
 <script>
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").setAttribute('aria-hidden', 'false');
 }
-
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").setAttribute('aria-hidden', 'true');
 }
 </script>
-	<div class="ContentWrapper">
-	
-	<div class="ProjectTitle">T-Shirt Designs</div>
-	
-	<div class="ProjectDescription">I was asked to come up with T-Shirt designs for the staff at Unity Christian High School. I used my existing knowledge of their brand and gave them a variety of options in different artistic styles to choose from.
 
+<main class="ContentWrapper">
+    <h1 class="ProjectTitle">T-Shirt Designs</h1>
+    <p class="ProjectDescription">
+        I was asked to create T-Shirt designs for Unity Christian High School staff, using their brand and offering a variety of artistic options.
+    </p>
 
-</div>
-	
+    <!-- Desktop Gallery -->
+    <section class="row" aria-label="Shirt Designs Gallery">
+        <div class="column">
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt1.jpg" onclick="openModal('Unity Shirt Designs/shirt1.jpg')" alt="Shirt design 1"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt2.jpg" onclick="openModal('Unity Shirt Designs/shirt2.jpg')" alt="Shirt design 2"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt3.jpg" onclick="openModal('Unity Shirt Designs/shirt3.jpg')" alt="Shirt design 3"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt4.jpg" onclick="openModal('Unity Shirt Designs/shirt4.jpg')" alt="Shirt design 4"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt5.jpg" onclick="openModal('Unity Shirt Designs/shirt5.jpg')" alt="Shirt design 5"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt6.jpg" onclick="openModal('Unity Shirt Designs/shirt6.jpg')" alt="Shirt design 6"></div>
+        </div>
 
-	<div class="row">
+        <div class="column">
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt7.jpg" onclick="openModal('Unity Shirt Designs/shirt7.jpg')" alt="Shirt design 7"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt8.jpg" onclick="openModal('Unity Shirt Designs/shirt8.jpg')" alt="Shirt design 8"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt9.jpg" onclick="openModal('Unity Shirt Designs/shirt9.jpg')" alt="Shirt design 9"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt10.jpg" onclick="openModal('Unity Shirt Designs/shirt10.jpg')" alt="Shirt design 10"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt11.jpg" onclick="openModal('Unity Shirt Designs/shirt11.jpg')" alt="Shirt design 11"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt12.jpg" onclick="openModal('Unity Shirt Designs/shirt12.jpg')" alt="Shirt design 12"></div>
+        </div>
 
-		
-		
-			
-<div class="column">
-	
-	     
-	
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt1.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt1.jpg')"
-                alt="shirt design">
+        <div class="column">
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt13.jpg" onclick="openModal('Unity Shirt Designs/shirt13.jpg')" alt="Shirt design 13"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt14.jpg" onclick="openModal('Unity Shirt Designs/shirt14.jpg')" alt="Shirt design 14"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt15.jpg" onclick="openModal('Unity Shirt Designs/shirt15.jpg')" alt="Shirt design 15"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt16.jpg" onclick="openModal('Unity Shirt Designs/shirt16.jpg')" alt="Shirt design 16"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt17.jpg" onclick="openModal('Unity Shirt Designs/shirt17.jpg')" alt="Shirt design 17"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt18.jpg" onclick="openModal('Unity Shirt Designs/shirt18.jpg')" alt="Shirt design 18"></div>
         </div>
-	
-		  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt2.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt2.jpg')"
-                alt="shirt design">
-        </div>  
-	
-	    <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt3.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt3.jpg')"
-                alt="shirt design">
-        </div>
-	     <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt4.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt4.jpg')"
-                alt="shirt design">
-        </div>
-	
-  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt5.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt5.jpg')"
-                alt="shirt design">
-        </div>	
-	
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt6.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt6.jpg')"
-                alt="shirt design">
-        </div>
-	
-</div>
-		
-<div class="column">
-		
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt7.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt7.jpg')"
-                alt="shirt design">
-        </div>	
-		
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt8.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt8.jpg')"
-                alt="shirt design">
-        </div>	
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt9.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt9.jpg')"
-                alt="shirt design">
-        </div>	
-		
-		  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt10.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt10.jpg')"
-                alt="shirt design">
-        </div>
-	
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt11.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt11.jpg')"
-                alt="shirt design">
-        </div>
-	
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt12.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt12.jpg')"
-                alt="shirt design">
-        </div>
-	
-</div>
-		
-		<div class="column">
-		
-		  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt13.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt13.jpg')"
-                alt="shirt design">
-        </div>
-		
-		  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt14.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt14.jpg')"
-                alt="shirt design">
-        </div>
-		  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt15.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt15.jpg')"
-                alt="shirt design">
-        </div>
-		  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt16.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt16.jpg')"
-                alt="shirt design">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt17.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt.jpg')"
-                alt="shirt17 design">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt18.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt18.jpg')"
-                alt="shirt design">
-        </div>
-		</div>
-	
-		
-  </div>
- 
-	<div class="rowsmallscreen">
+    </section>
 
-		
-		
-			
-<div class="column">
-	
-	     
-	
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt1.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt1.jpg')"
-                alt="shirt design">
+    <!-- Mobile Gallery -->
+    <section class="rowsmallscreen" aria-label="Mobile Shirt Designs Gallery">
+        <div class="column">
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt1.jpg" onclick="openModal('Unity Shirt Designs/shirt1.jpg')" alt="Shirt design 1"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt2.jpg" onclick="openModal('Unity Shirt Designs/shirt2.jpg')" alt="Shirt design 2"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt3.jpg" onclick="openModal('Unity Shirt Designs/shirt3.jpg')" alt="Shirt design 3"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt4.jpg" onclick="openModal('Unity Shirt Designs/shirt4.jpg')" alt="Shirt design 4"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt5.jpg" onclick="openModal('Unity Shirt Designs/shirt5.jpg')" alt="Shirt design 5"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt6.jpg" onclick="openModal('Unity Shirt Designs/shirt6.jpg')" alt="Shirt design 6"></div>
         </div>
-	
-		  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt2.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt2.jpg')"
-                alt="shirt design">
-        </div>  
-	
-	    <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt3.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt3.jpg')"
-                alt="shirt design">
-        </div>
-	     <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt4.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt4.jpg')"
-                alt="shirt design">
-        </div>
-	
-  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt5.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt5.jpg')"
-                alt="shirt design">
-        </div>	
-	
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt6.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt6.jpg')"
-                alt="shirt design">
-        </div>
-	
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt7.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt7.jpg')"
-                alt="shirt design">
-        </div>	
-		
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt8.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt8.jpg')"
-                alt="shirt design">
-        </div>	
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt9.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt9.jpg')"
-                alt="shirt design">
-        </div>	
-	
-</div>
-		
-<div class="column">
-		
-	
-		
-		  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt10.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt10.jpg')"
-                alt="shirt design">
-        </div>
-	
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt11.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt11.jpg')"
-                alt="shirt design">
-        </div>
-	
-	  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt12.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt12.jpg')"
-                alt="shirt design">
-        </div>
-	<div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt13.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt13.jpg')"
-                alt="shirt design">
-        </div>
-		
-		  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt14.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt14.jpg')"
-                alt="shirt design">
-        </div>
-		  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt15.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt15.jpg')"
-                alt="shirt design">
-        </div>
-		  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt16.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt16.jpg')"
-                alt="shirt design">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt17.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt.jpg')"
-                alt="shirt17 design">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"Unity Shirt Designs/shirt18.jpg"
-                onclick="openModal(
-'Unity Shirt Designs/shirt18.jpg')"
-                alt="shirt design">
-        </div>
-	
-</div>
-	
-	
-		
-  </div>
 
-	
-	
-	</div>
-	<div class="Footer">© Hope Geissert, <span id="currentYear"></span>.</div>
-	<script>
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
+        <div class="column">
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt7.jpg" onclick="openModal('Unity Shirt Designs/shirt7.jpg')" alt="Shirt design 7"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt8.jpg" onclick="openModal('Unity Shirt Designs/shirt8.jpg')" alt="Shirt design 8"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt9.jpg" onclick="openModal('Unity Shirt Designs/shirt9.jpg')" alt="Shirt design 9"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt10.jpg" onclick="openModal('Unity Shirt Designs/shirt10.jpg')" alt="Shirt design 10"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt11.jpg" onclick="openModal('Unity Shirt Designs/shirt11.jpg')" alt="Shirt design 11"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt12.jpg" onclick="openModal('Unity Shirt Designs/shirt12.jpg')" alt="Shirt design 12"></div>
+        </div>
+
+        <div class="column">
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt13.jpg" onclick="openModal('Unity Shirt Designs/shirt13.jpg')" alt="Shirt design 13"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt14.jpg" onclick="openModal('Unity Shirt Designs/shirt14.jpg')" alt="Shirt design 14"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt15.jpg" onclick="openModal('Unity Shirt Designs/shirt15.jpg')" alt="Shirt design 15"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt16.jpg" onclick="openModal('Unity Shirt Designs/shirt16.jpg')" alt="Shirt design 16"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt17.jpg" onclick="openModal('Unity Shirt Designs/shirt17.jpg')" alt="Shirt design 17"></div>
+            <div class="gallery-item"><img src="Unity Shirt Designs/shirt18.jpg" onclick="openModal('Unity Shirt Designs/shirt18.jpg')" alt="Shirt design 18"></div>
+        </div>
+    </section>
+</main>
+
+<footer class="Footer">© Hope Geissert, <span id="currentYear"></span>.</footer>
+<script>
+document.getElementById("currentYear").textContent = new Date().getFullYear();
 </script>
-	    <!-- Modal for Image Display -->
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
 
-    <!-- JavaScript for Modal -->
-    <script>
-        function openModal(src) {
-            document.getElementById("modalImage").src = src;
-            document.getElementById("myModal").style.display = "block";
-        }
+<!-- Modal for Image Display -->
+<div id="myModal" class="modal" role="dialog" aria-hidden="true" aria-label="Shirt Image Modal">
+    <button class="close" onclick="closeModal()" aria-label="Close Image Modal">&times;</button>
+    <img class="modal-content" id="modalImage" alt="Expanded shirt design image">
+</div>
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-    </script>
-	
-	
+<script>
+function openModal(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("myModal").setAttribute('aria-hidden','false');
+}
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+    document.getElementById("myModal").setAttribute('aria-hidden','true');
+}
+</script>
+
+</body>
 </html>

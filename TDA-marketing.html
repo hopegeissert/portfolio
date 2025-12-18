@@ -1,271 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>TD Ameritrade Marketing</title>
-	
-	
-	
+    <meta charset="UTF-8">
+    <title>TD Ameritrade Marketing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        .ImageContainer img{
+            /* preserve existing styles */
+        }
+    </style>
 </head>
+<body>
 
-<style>
-
-	.ImageContainer img{
-		
-	}
-</style>
-
-
-<html><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="favicon.ico">
-			<div class="TopLinks">
-		<a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-		</div>	
-		
-		
-
-		<div class="MobileNavWrapper">
-		<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
+<!-- Top Navigation -->
+<nav class="TopLinks" aria-label="Main Navigation">
     <a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-  </div>
+    <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+    <a href="aboutme.html" target="_blank">About Me</a>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="MobileNavWrapper">
+    <div id="myNav" class="overlay" aria-hidden="true">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+        <div class="overlay-content">
+            <a href="index.html">Work</a>
+            <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+            <a href="aboutme.html" target="_blank">About Me</a>
+        </div>
+    </div>
+    <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
+            onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
 </div>
 
-
-
-<span style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
 <script>
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").setAttribute('aria-hidden', 'false');
 }
-
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").setAttribute('aria-hidden', 'true');
 }
 </script>
 
-	<div class="ContentWrapper">
-	
-	<div class="ProjectTitle">TD Ameritrade Marketing</div>
-	
-	<div class="ProjectDescription">I had the privilege to work on a variety of marketing assets for TD Ameritrade. I learned how to design well for their brand but push them in new and creative ways as well. Even though they’ve now transitioned to Schwab, I enjoyed the creative challenges of this brand, and these pieces were very successful when they ran.
+<main class="ContentWrapper">
+    <h1 class="ProjectTitle">TD Ameritrade Marketing</h1>
+    <p class="ProjectDescription">
+        I had the privilege to work on a variety of marketing assets for TD Ameritrade. I learned how to design well for their brand but push them in new and creative ways as well. Even though they’ve now transitioned to Schwab, I enjoyed the creative challenges of this brand, and these pieces were very successful when they ran.
+    </p>
 
+    <!-- Desktop Gallery -->
+    <section class="row" aria-label="TD Ameritrade Marketing Gallery">
+        <div class="column">
+            <div class="gallery-item"><img src="TDA Marketing/TDA1.jpg" onclick="openModal('TDA Marketing/TDA1.jpg')" alt="TD Ameritrade Marketing asset 1"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA2.jpg" onclick="openModal('TDA Marketing/TDA2.jpg')" alt="TD Ameritrade Marketing asset 2"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA3.jpg" onclick="openModal('TDA Marketing/TDA3.jpg')" alt="TD Ameritrade Marketing asset 3"></div>
+        </div>
+        <div class="column">
+            <div class="gallery-item"><img src="TDA Marketing/TDA4.jpg" onclick="openModal('TDA Marketing/TDA4.jpg')" alt="TD Ameritrade Marketing asset 4"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA5.jpg" onclick="openModal('TDA Marketing/TDA5.jpg')" alt="TD Ameritrade Marketing asset 5"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA6.jpg" onclick="openModal('TDA Marketing/TDA6.jpg')" alt="TD Ameritrade Marketing asset 6"></div>
+        </div>
+        <div class="column">
+            <div class="gallery-item"><img src="TDA Marketing/TDA7.jpg" onclick="openModal('TDA Marketing/TDA7.jpg')" alt="TD Ameritrade Marketing asset 7"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA8.jpg" onclick="openModal('TDA Marketing/TDA8.jpg')" alt="TD Ameritrade Marketing asset 8"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA9.jpg" onclick="openModal('TDA Marketing/TDA9.jpg')" alt="TD Ameritrade Marketing asset 9"></div>
+        </div>
+    </section>
 
-</div>
-	
-	
-	
-	<div class="row">
+    <!-- Mobile Gallery -->
+    <section class="rowsmallscreen" aria-label="Mobile TD Ameritrade Marketing Gallery">
+        <div class="column">
+            <div class="gallery-item"><img src="TDA Marketing/TDA1.jpg" onclick="openModal('TDA Marketing/TDA1.jpg')" alt="TD Ameritrade Marketing asset 1"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA2.jpg" onclick="openModal('TDA Marketing/TDA2.jpg')" alt="TD Ameritrade Marketing asset 2"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA3.jpg" onclick="openModal('TDA Marketing/TDA3.jpg')" alt="TD Ameritrade Marketing asset 3"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA4.jpg" onclick="openModal('TDA Marketing/TDA4.jpg')" alt="TD Ameritrade Marketing asset 4"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA5.jpg" onclick="openModal('TDA Marketing/TDA5.jpg')" alt="TD Ameritrade Marketing asset 5"></div>
+        </div>
+        <div class="column">
+            <div class="gallery-item"><img src="TDA Marketing/TDA6.jpg" onclick="openModal('TDA Marketing/TDA6.jpg')" alt="TD Ameritrade Marketing asset 6"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA7.jpg" onclick="openModal('TDA Marketing/TDA7.jpg')" alt="TD Ameritrade Marketing asset 7"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA8.jpg" onclick="openModal('TDA Marketing/TDA8.jpg')" alt="TD Ameritrade Marketing asset 8"></div>
+            <div class="gallery-item"><img src="TDA Marketing/TDA9.jpg" onclick="openModal('TDA Marketing/TDA9.jpg')" alt="TD Ameritrade Marketing asset 9"></div>
+        </div>
+    </section>
+</main>
 
-		
-<div class="column">
-		
-	  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA1.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA1.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>	
-	
-	  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA2.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA2.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-	
-	  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA3.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA3.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-		
-		
-</div>
-		
-		
-		<div class="column">
-		
-		  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA4.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA4.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA5.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA5.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA6.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA6.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-		
-		</div>
-		
-		<div class="column">
-		  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA7.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA7.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA8.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA8.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA9.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA9.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-		
-		
-		</div>
-	
-		
-  </div>
- 
-	
-	<div class="rowsmallscreen">
-
-		
-<div class="column">
-		
-	  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA1.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA1.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>	
-	
-	  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA2.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA2.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-	
-	  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA3.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA3.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-		  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA4.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA4.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA5.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA5.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-		
-</div>
-		
-		
-		<div class="column">
-		
-		
-			
-			  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA6.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA6.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-		  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA7.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA7.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA8.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA8.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-			
-			  <div class="gallery-item">
-            <img src=
-"TDA Marketing/TDA9.jpg"
-                onclick="openModal(
-'TDA Marketing/TDA9.jpg')"
-                alt="TDA Ameritrade Marketing">
-        </div>
-		</div>
-		
-	
-	
-		
-  </div>
-	
-	
-	</div>
-	
-	<div class="Footer">© Hope Geissert, <span id="currentYear"></span>.</div>
-	<script>
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
+<footer class="Footer">© Hope Geissert, <span id="currentYear"></span>.</footer>
+<script>
+document.getElementById("currentYear").textContent = new Date().getFullYear();
 </script>
-	   <!-- Modal for Image Display -->
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
 
-    <!-- JavaScript for Modal -->
-    <script>
-        function openModal(src) {
-            document.getElementById("modalImage").src = src;
-            document.getElementById("myModal").style.display = "block";
-        }
+<!-- Modal for Image Display -->
+<div id="myModal" class="modal" role="dialog" aria-hidden="true" aria-label="Marketing Asset Modal">
+    <button class="close" onclick="closeModal()" aria-label="Close Image Modal">&times;</button>
+    <img class="modal-content" id="modalImage" alt="Expanded marketing asset image">
+</div>
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-    </script>
-	
-	
+<script>
+function openModal(src) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("myModal").setAttribute('aria-hidden','false');
+}
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+    document.getElementById("myModal").setAttribute('aria-hidden','true');
+}
+</script>
+
+</body>
 </html>

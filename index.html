@@ -1,211 +1,416 @@
 <!doctype html>
+<html lang="en">
 
-<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hope Geissert</title>
 
-  <head>
+  <link rel="stylesheet" href="style.css">
 
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <title>Hope Geissert</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=EB Garamond" rel="stylesheet"> 
-	  <link rel="icon" type="image/png" href="favicon.ico">
-	
-	</head>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <body>
+  <link rel="icon" type="image/png" href="favicon.ico">
 
-    <main>
-		
-	<div class="TopLinks">
-		<a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-		</div>	
-		
-		
+  <!-- ADA utility -->
+  <style>
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+    }
 
-		<div class="MobileNavWrapper">
-		<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<main id="main-content">
+
+  <!-- NAV: same classes preserved -->
+  <nav class="TopLinks" aria-label="Primary navigation">
     <a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
+    <a href="Hope-Geissert-Resume.pdf" target="_blank">
+      Resume <span class="sr-only">(opens in new tab)</span>
+    </a>
+    <a href="aboutme.html" target="_blank">
+      About Me <span class="sr-only">(opens in new tab)</span>
+    </a>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="MobileNavWrapper">
+
+    <!-- CHANGED span → button but class untouched -->
+    <button
+      class="hamburger"
+      aria-label="Open navigation menu"
+      aria-controls="myNav"
+      aria-expanded="false"
+      onclick="openNav()"
+      style="font-size:44px; color:#686868; background:none; border:none;">
+      &#9776;
+    </button>
+
+    <div id="myNav" class="overlay" aria-hidden="true">
+      <button
+        class="closebtn"
+        aria-label="Close navigation menu"
+        onclick="closeNav()">
+        &times;
+      </button>
+
+      <div class="overlay-content">
+        <a href="index.html">Work</a>
+        <a href="Hope-Geissert-Resume.pdf" target="_blank">
+          Resume <span class="sr-only">(opens in new tab)</span>
+        </a>
+        <a href="aboutme.html" target="_blank">
+          About Me <span class="sr-only">(opens in new tab)</span>
+        </a>
+      </div>
+    </div>
   </div>
+
+  <div class="MainLogo">
+    <img src="hope-logo.png" alt="Hope Geissert logo">
+  </div>
+
+  <div class="JobTitle">
+    Senior Art Director &nbsp;&nbsp;|&nbsp;&nbsp; Designer&nbsp;&nbsp;|&nbsp;&nbsp; Artist
+  </div>
+
+  <div class="IntroTextWrapper">
+    <div class="IntroText">
+     Hi, I’m Hope Geissert—Senior Art Director at Staples Promotional Products. I design for some of today’s most recognizable brands and thrive on creative challenges across any style or medium. From digital design to fine art, creativity drives everything I do.
+    </div>
+  </div>
+
+</main>
+	
+<div class="BoxesWrapper">
+
+	<div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="UHG-living-lookbook.html">
+        <img src="Homepage Tile Images/uhg-lookbook.jpg"
+             alt="UHG Living Lookbook">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="UHG-living-lookbook.html">UHG Living Lookbook</a>
+    </div>
+  </div>
+	
+	
+	
+	
+	
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="DADD-catalog-25.html">
+        <img src="Homepage Tile Images/DADD-25-Tile.jpg"
+             alt="2025–2026 DADD Catalog design">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="DADD-catalog-25.html">2025-2026 DADD Catalog</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="Channel-catalog-25.html">
+        <img src="Homepage Tile Images/25-Channel-catalog-home.jpg"
+             alt="2025–2026 Channel Catalog design">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="Channel-catalog-25.html">2025-2026 Channel Catalog</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="UAL-Concept-Development.html">
+        <img src="Homepage Tile Images/UALconsumer.jpg"
+             alt="United Airlines concept development project">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="UAL-Concept-Development.html">United Airlines Concept Development</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="UAL-Photography.html">
+        <img src="Homepage Tile Images/UALPhotoDirection.jpg"
+             alt="United Airlines photography direction project">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="UAL-Photography.html">United Airlines Photography Direction</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="UAL-site-sale-banners.html">
+        <img src="Homepage Tile Images/UALsitesalebanners.jpg"
+             alt="United Airlines site sale banner designs">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="UAL-site-sale-banners.html">United Airlines Site Sale Banners</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="UAL-marketing.html">
+        <img src="Homepage Tile Images/UnitedAirlinesmarketing.jpg"
+             alt="United Airlines creative marketing campaign">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="UAL-marketing.html">United Airlines Creative Marketing</a>
+    </div>
+  </div>
+	
+	
+	
+	  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="Bayer-email-marketing.html">
+        <img src="Homepage Tile Images/bayermarketing.jpg"
+             alt="Bayer email marketing campaign design">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="Bayer-email-marketing.html">Bayer Email Marketing</a>
+    </div>
+  </div>
+	
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="Channel-email-marketing.html">
+        <img src="Homepage Tile Images/channelmarketing.jpg"
+             alt="Channel email marketing campaign design">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="Bayer-email-marketing.html">Channel Email Marketing</a>
+    </div>
+  </div>
+	
+
+	
+	
+	
+	
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="Bayer-Redesign.html">
+        <img src="Homepage Tile Images/Bayer-25-site-tile.jpg"
+             alt="Bayer website redesign project">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="Bayer-Redesign.html">Bayer Site Work</a>
+    </div>
+  </div>
+<!--
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="Channel-redesign.html">
+        <img src="Homepage Tile Images/Channelredesign.jpg"
+             alt="Channel website redesign project">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="Channel-redesign.html">Channel Site Redesign</a>
+    </div>
+  </div>
+
+-->
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="DADD-catalog.html">
+        <img src="Homepage Tile Images/bayercatalog.jpg"
+             alt="2024–2025 DADD Catalog design">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="DADD-catalog.html">2024-2025 DADD Catalog</a>
+    </div>
+  </div>
+
+
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="channel-catalog.html">
+        <img src="Homepage Tile Images/channelcatalog.jpg"
+             alt="2024–2025 Channel Catalog design">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="channel-catalog.html">2024-2025 Channel Catalog</a>
+    </div>
+  </div>
+	
+	  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="Wells-Fargo-Site-Redesign.html">
+        <img src="Homepage Tile Images/wellsfargositeredesign.jpg"
+             alt="Wells Fargo website redesign concept">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="Wells-Fargo-Site-Redesign.html">Wells Fargo Site Redesign</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="cocacola-catalog.html">
+        <img src="Homepage Tile Images/cokecover.jpg"
+             alt="2023–2024 Coca-Cola catalog cover design">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="cocacola-catalog.html">2023-2024 Coca-Cola Catalog</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="centuryhome.html">
+        <img src="Homepage Tile Images/bookillustrations.jpg"
+             alt="Book illustration artwork">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="centuryhome.html">Book Illustrations</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="Program-poster.html">
+        <img src="Homepage Tile Images/programposterdesign.jpg"
+             alt="Program and poster design work">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="Program-poster.html">Program and Poster Design</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="Kubota-catalog.html">
+        <img src="Homepage Tile Images/kubotacatalog.jpg"
+             alt="2022–2023 Kubota catalog design">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="Kubota-catalog.html">2022-2023 Kubota Catalog</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="Inside-Sales-Flyers.html">
+        <img src="Homepage Tile Images/randommarketing.jpg"
+             alt="Flyer designs for inside sales team">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="Inside-Sales-Flyers.html">Flyers for Inside Sales Team at SPP</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="large-paintings.html">
+        <img src="Homepage Tile Images/paintinglarge.jpg"
+             alt="Large-scale painting artwork">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="large-paintings.html">Large Paintings</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="cookieart.html">
+        <img src="Homepage Tile Images/cookiedesign.jpg"
+             alt="Decorative cookie art designs">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="cookieart.html">Cookie Design</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="shirt-designs.html">
+        <img src="Homepage Tile Images/shirtdesigns.jpg"
+             alt="T-shirt graphic design work">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="shirt-designs.html">T-Shirt Designs</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="logodesign.html">
+        <img src="Homepage Tile Images/logodesign.jpg"
+             alt="Logo design projects">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="logodesign.html">Logo Design</a>
+    </div>
+  </div>
+
+  <div class="BoxIndWrapper">
+    <div class="BoxImage">
+      <a href="TDA-marketing.html">
+        <img src="Homepage Tile Images/tdamarketingagain.jpg"
+             alt="TD Ameritrade marketing design project">
+      </a>
+    </div>
+    <div class="BoxText">
+      <a href="TDA-marketing.html">TD Ameritrade Marketing</a>
+    </div>
+  </div>
+
 </div>
 
-
-
-<span style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-		
-		
-		
-		
-	
-		
-		
-<div class="MainLogo">
-		<img src="hope-logo.png"/></div>
-		
-        <div class="JobTitle">Senior Art Director, Designer, Artist</div>  
-
-        <div class="IntroText">Hi, I'm Hope Geissert! <br>I am currently a Senior Art Director at Staples Promotional Products who gets to design for some of the coolest brands out there. I love a challenge and working with any brand or style. I have a passion for all things creative from the digital space to the world of fine arts.</div>
-
-    </main>
-
-  </body>
-	
-	
-	
-
-	
-	
-	
-	
-	<div class="BoxesWrapper">
-	<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="UAL-Concept-Development.html"><img src="Homepage Tile Images/UALconsumer.jpg"></a>	</div>
-		<div class="BoxText"><a href="UAL-Concept-Development.html">United Airlines Concept Development</a></div>
-	</div>
-	
-	<div class="BoxIndWrapper">
-		<div class="BoxImage">
-			<a href="UAL-Photography.html"><img src="Homepage Tile Images/UALPhotoDirection.jpg"></a>	</div>
-		<div class="BoxText"><a href="UAL-Photography.html">United Airlines Photography Direction</a></div>
-	</div>
-	<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="UAL-site-sale-banners.html"><img src="Homepage Tile Images/UALsitesalebanners.jpg">	</a></div>
-		<div class="BoxText"><a href="UAL-site-sale-banners.html">United Airlines Site Sale Banners</a></div>
-	</div>
-	<div class="BoxIndWrapper">
-		<div class="BoxImage"><a href="UAL-marketing.html">
-	<img src="Homepage Tile Images/UnitedAirlinesmarketing.jpg"></a>	</div>
-		<div class="BoxText"><a href="UAL-marketing.html">United Airlines Creative Marketing</a></div>
-	</div>
-	<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="Wells-Fargo-Site-Redesign.html"><img src="Homepage Tile Images/wellsfargositeredesign.jpg">	</a></div>
-		<div class="BoxText"><a href="Wells-Fargo-Site-Redesign.html">Wells Fargo Site Redesign</a></div>
-	</div>
-	<div class="BoxIndWrapper">
-		<div class="BoxImage"><a href="Bayer-Redesign.html">
-	<img src="Homepage Tile Images/bayersiteredesign.jpg"></a>	</div>
-		<div class="BoxText"><a href="Bayer-Redesign.html">Bayer Site Redesign</a></div>
-	</div>
-	
-		<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="Channel-redesign.html"><img src="Homepage Tile Images/Channelredesign.jpg">	</a></div>
-		<div class="BoxText"><a href="Channel-redesign.html">Channel Site Redesign</a></div>
-	</div>
-	
-			<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="DADD-catalog.html"><img src="Homepage Tile Images/bayercatalog.jpg"></a>	</div>
-				<div class="BoxText"><a href="DADD-catalog.html">2024-2025 DADD Catalog</a></div>
-	</div>
-		
-					<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="Bayer-email-marketing.html"><img src="Homepage Tile Images/bayermarketing.jpg">	</a></div>
-						<div class="BoxText"><a href="Bayer-email-marketing.html">Bayer Email Marketing</a></div>
-	</div>
-		
-	
-		
-		
-			<div class="BoxIndWrapper">
-		<div class="BoxImage"><a href="channel-catalog.html">
-	<img src="Homepage Tile Images/channelcatalog.jpg"></a>	</div>
-				<div class="BoxText"><a href="channel-catalog.html">2024-2025 Channel Catalog</a></div>
-	</div>
-	
-	
-		<div class="BoxIndWrapper">
-		<div class="BoxImage"><a href="cocacola-catalog.html">
-	<img src="Homepage Tile Images/cokecover.jpg"></a>	</div>
-			<div class="BoxText"><a href="cocacola-catalog.html">2023-2024 Coca-Cola Catalog</a></div>
-	</div>
-		
-		
-		
-				<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="centuryhome.html"><img src="Homepage Tile Images/bookillustrations.jpg"></a>	</div>
-					<div class="BoxText"><a href="centuryhome.html">Book Illustrations</a></div>
-	</div>
-		
-			
-				<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="Program-poster.html"><img src="Homepage Tile Images/programposterdesign.jpg">	</a></div>
-					<div class="BoxText"><a href="Program-poster.html">Program and Poster Design</a></div>
-	</div>
-	
-				
-						<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="Kubota-catalog.html"><img src="Homepage Tile Images/kubotacatalog.jpg"></a>	</div>
-		<div class="BoxText"><a href="Kubota-catalog.html">2022-2023 Kubota Catalog</a></div>
-	</div>
-		
-				<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="Inside-Sales-Flyers.html"><img src="Homepage Tile Images/randommarketing.jpg">	</a></div>
-		<div class="BoxText"><a href="Inside-Sales-Flyers.html">Flyers for Inside Sales Team at SPP</a></div>
-	</div>
-		
-		
-		
-		
-								<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="large-paintings.html"><img src="Homepage Tile Images/paintinglarge.jpg"></a>	</div>
-									<div class="BoxText"><a href="large-paintings.html">Large Paintings</a></div>
-	</div>
-		
-			<div class="BoxIndWrapper">
-		<div class="BoxImage">
-<a href="cookieart.html"><img src="Homepage Tile Images/cookiedesign.jpg"></a>		</div>
-		<div class="BoxText"><a href="cookieart.html">Cookie Design</a></div>
-	</div>
-		
-									<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="shirt-designs.html"><img src="Homepage Tile Images/shirtdesigns.jpg"></a>	</div>
-		<div class="BoxText"><a href="shirt-designs.html">T-Shirt Designs</a></div>
-	</div>
-		
-										<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="logodesign.html"><img src="Homepage Tile Images/logodesign.jpg"></a>	</div>
-											<div class="BoxText"><a href="logodesign.html">Logo Design</a></div>
-	</div>
-		
-								<div class="BoxIndWrapper">
-		<div class="BoxImage">
-	<a href="TDA-marketing.html"><img src="Homepage Tile Images/tdamarketingagain.jpg">	</a></div>
-		<div class="BoxText"><a href="TDA-marketing.html">TD Ameritrade Marketing</a></div>
-	</div>
-		
-		
-	
-	</div>
-	
 	
 	
 <div class="Footer">© Hope Geissert, <span id="currentYear"></span>.</div>
@@ -214,8 +419,23 @@ function closeNav() {
   document.getElementById("currentYear").textContent = new Date().getFullYear();
 </script>
 	
+	<script>
+  const nav = document.getElementById("myNav");
+
+  function openNav() {
+    nav.style.width = "100%";
+    nav.setAttribute("aria-hidden", "false");
+    document.querySelector('.hamburger').setAttribute("aria-expanded", "true");
+  }
+
+  function closeNav() {
+    nav.style.width = "0%";
+    nav.setAttribute("aria-hidden", "true");
+    document.querySelector('.hamburger').setAttribute("aria-expanded", "false");
+  }
+</script>
+
 	
-	
-	
+	</body>
 
 </html>
