@@ -1,405 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Wells Fargo Site Redesign</title>
-	
-	
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wells Fargo Site Redesign</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        .ImageContainer img{
+            box-shadow: 5px 10px 10px #c8c8c8;
+        }
+        .ImageText{
+            padding-bottom:10px;
+            font-size:20px;
+        }
+    </style>
 </head>
+<body>
 
-<style>
-	.ImageContainer img{
-		 box-shadow: 5px 10px 10px #c8c8c8;
-	}
-	
-	.ImageText{
-		padding-bottom:10px;
-		font-size:20px;
-	}
-	
-</style>
+    <!-- Top Navigation -->
+    <nav class="TopLinks" aria-label="Main Navigation">
+        <a href="index.html">Work</a>
+        <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+        <a href="aboutme.html" target="_blank">About Me</a>
+    </nav>
 
-
-<html><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="favicon.ico">
-			<div class="TopLinks">
-		<a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-		</div>	
-		
-		
-
-		<div class="MobileNavWrapper">
-		<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-  </div>
-</div>
-
-
-
-<span style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-
-	<div class="ContentWrapper">
-	
-	<div class="ProjectTitle">Wells Fargo Site Redesign</div>
-	
-	<div class="ProjectDescription">Wells Fargo has worked with Staples Promotional Products for a few years now. As their new Art Director in 2024, I was asked to refresh the site look and give more prominent space for marketing the different divisions within Wells Fargo. The result is a look and feel that is more concise with information that’s easier to find. I incorporated some of the newer functionality that is also being used on the United Airlines sites for a fresh and modern user experience. 
-
-
-</div>
-	
-	
-
-	
-	<div class="rowUnited">
-
-		
-<div class="column">
-	  <div class="gallery-item-shadow">
-		  Previous Wells Fargo Homepage
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-previous.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-previous.png')"
-                alt="Wells Fargo Previous Design">
-        </div>	
-	
-	
-	<div class="gallery-item-shadow">
-		
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-logo-selector.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-logo-selector.png')"
-                alt="Wells Fargo Logo Selector">
+    <!-- Mobile Navigation -->
+    <div class="MobileNavWrapper">
+        <div id="myNav" class="overlay" aria-hidden="true">
+            <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+            <div class="overlay-content">
+                <a href="index.html">Work</a>
+                <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+                <a href="aboutme.html" target="_blank">About Me</a>
+            </div>
         </div>
-	
-	
-	
-		<div class="gallery-item-shadow">
-		 
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-product.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-product.png')"
-                alt="Wells Fargo Product Page">
-        </div>
-	
-	
-		
-</div>
-	<div class="column">
-	  <div class="gallery-item-shadow">
-		  Updated Wells Fargo Homepage
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-home.png"
-                onclick="openModal(f
-'Wells Fargo Site Redesign/wells-fargo-home.png')"
-                alt="Wells Fargo New Homepage">
-        </div>	
-		
-		
-		  <div class="gallery-item-shadow">
-		  
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-custom-order.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-custom-order.png')"
-                alt="Wells Fargo Custom Order">
-        </div>	
-			  <div class="gallery-item-shadow">
-		  
-            <img src=
-"Wells Fargo Site Redesign/wellsfargo-internation.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wellsfargo-internation.png')"
-                alt="Wells Fargo International Orders">
-        </div>	
-		
-		
-</div>	
-	
-	<div class="column">
-	  <div class="gallery-item-shadow">
-		  Updated Inside Pages
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-product-list.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-product-list.png')"
-                alt="Wells Fargo New Inside Page">
-        </div>	
-		
-		
-		  <div class="gallery-item-shadow">
-	
-            <img src=
-"Wells Fargo Site Redesign/wellsfargo-diverse.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wellsfargo-diverse.png')"
-                alt="Wells Fargo New Product List Page Category Header">
-        </div>	
-		
-		
-			  <div class="gallery-item-shadow">
-	
-            <img src=
-"Wells Fargo Site Redesign/hot-tag-update.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/hot-tag-update.png')"
-                alt="Wells Fargo New Hot Tags">
-        </div>	
-</div>			
-		
-	
-		
-  </div>
-	
-		<div class="rowsmallscreen">
-
-		
-<div class="column">
-	  <div class="gallery-item-shadow">
-		  Previous Wells Fargo Homepage
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-previous.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-previous.png')"
-                alt="Wells Fargo Previous Design">
-        </div>	
-	
-	
-	<div class="gallery-item-shadow">
-		
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-logo-selector.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-logo-selector.png')"
-                alt="Wells Fargo Logo Selector">
-        </div>
-	
-	
-	
-		<div class="gallery-item-shadow">
-		 
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-product.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-product.png')"
-                alt="Wells Fargo Product Page">
-        </div>
-	  <div class="gallery-item-shadow">
-		  
-            <img src=
-"Wells Fargo Site Redesign/wellsfargo-internation.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wellsfargo-internation.png')"
-                alt="Wells Fargo International Orders">
-        </div>	
-	
-		
-</div>
-	<div class="column">
-	  <div class="gallery-item-shadow">
-		  Updated Wells Fargo Homepage
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-home.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-home.png')"
-                alt="Wells Fargo New Homepage">
-        </div>	
-			  <div class="gallery-item-shadow">
-		  Updated Inside Pages
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-product-list.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-product-list.png')"
-                alt="Wells Fargo New Inside Page">
-        </div>	
-		
-		  <div class="gallery-item-shadow">
-		  
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-custom-order.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-custom-order.png')"
-                alt="Wells Fargo Custom Order">
-        </div>	
-			
-		
-		
-		 <div class="gallery-item-shadow">
-	
-            <img src=
-"Wells Fargo Site Redesign/wellsfargo-diverse.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wellsfargo-diverse.png')"
-                alt="Wells Fargo New Product List Page Category Header">
-        </div>
-		
-			  <div class="gallery-item-shadow">
-	
-            <img src=
-"Wells Fargo Site Redesign/hot-tag-update.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/hot-tag-update.png')"
-                alt="Wells Fargo New Hot Tags">
-        </div>
-		
-</div>	
-	
-		
-		
-	
-		
-  </div>
-	
-		<div class="rowsmallest">
-
-		
-<div class="column">
-	  <div class="gallery-item-shadow">
-		  Previous Wells Fargo Homepage
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-previous.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-previous.png')"
-                alt="Wells Fargo Previous Design">
-        </div>	
-	
-	  <div class="gallery-item-shadow">
-		  Updated Wells Fargo Homepage
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-home.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-home.png')"
-                alt="Wells Fargo New Homepage">
-        </div>
-	
-	  <div class="gallery-item-shadow">
-		  Updated Inside Pages
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-product-list.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-product-list.png')"
-                alt="Wells Fargo New Inside Page">
-        </div>	
-	
-	
-	<div class="gallery-item-shadow">
-		
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-logo-selector.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-logo-selector.png')"
-                alt="Wells Fargo Logo Selector">
-        </div>
-	
-	
-	
-		<div class="gallery-item-shadow">
-		 
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-product.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-product.png')"
-                alt="Wells Fargo Product Page">
-        </div>
-	
-	
-		
-</div>
-	<div class="column">
-		
-			
-		
-		  <div class="gallery-item-shadow">
-		  
-            <img src=
-"Wells Fargo Site Redesign/wells-fargo-custom-order.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wells-fargo-custom-order.png')"
-                alt="Wells Fargo Custom Order">
-        </div>	
-			
-		  <div class="gallery-item-shadow">
-		  
-            <img src=
-"Wells Fargo Site Redesign/wellsfargo-internation.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wellsfargo-internation.png')"
-                alt="Wells Fargo International Orders">
-        </div>	
-		
-		 <div class="gallery-item-shadow">
-	
-            <img src=
-"Wells Fargo Site Redesign/wellsfargo-diverse.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/wellsfargo-diverse.png')"
-                alt="Wells Fargo New Product List Page Category Header">
-        </div>
-		
-			  <div class="gallery-item-shadow">
-	
-            <img src=
-"Wells Fargo Site Redesign/hot-tag-update.png"
-                onclick="openModal(
-'Wells Fargo Site Redesign/hot-tag-update.png')"
-                alt="Wells Fargo New Hot Tags">
-        </div>
-		
-</div>	
-	
-		
-		
-	
-		
-  </div>
-		
-		
-		
-	</div>
-	
-	
-	<div class="Footer">© Hope Geissert, <span id="currentYear"></span>.</div>
-	
-	<script>
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
-</script>
-	
-				   <!-- Modal for Image Display -->
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
+        <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
+                onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
     </div>
 
-    <!-- JavaScript for Modal -->
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+            document.getElementById("myNav").setAttribute('aria-hidden', 'false');
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            document.getElementById("myNav").setAttribute('aria-hidden', 'true');
+        }
+    </script>
+
+    <!-- Main Content -->
+    <main class="ContentWrapper">
+        <h1 class="ProjectTitle">Wells Fargo Site Redesign</h1>
+        <p class="ProjectDescription">
+            Wells Fargo has worked with Staples Promotional Products for a few years now. As their new Art Director in 2024, I was asked to refresh the site look and give more prominent space for marketing the different divisions within Wells Fargo. The result is a look and feel that is more concise with information that’s easier to find. I incorporated some of the newer functionality that is also being used on the United Airlines sites for a fresh and modern user experience.
+        </p>
+
+        <!-- Desktop Gallery -->
+        <section class="rowUnited" aria-label="Wells Fargo Redesign Gallery">
+            <div class="column">
+                <div class="gallery-item-shadow">
+                    <p>Previous Wells Fargo Homepage</p>
+                    <img src="Wells Fargo Site Redesign/wells-fargo-previous.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-previous.png')"
+                         alt="Previous Wells Fargo Homepage design">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wells-fargo-logo-selector.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-logo-selector.png')"
+                         alt="Wells Fargo logo selector page">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wells-fargo-product.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-product.png')"
+                         alt="Wells Fargo product page">
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="gallery-item-shadow">
+                    <p>Updated Wells Fargo Homepage</p>
+                    <img src="Wells Fargo Site Redesign/wells-fargo-home.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-home.png')"
+                         alt="Updated Wells Fargo homepage">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wells-fargo-custom-order.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-custom-order.png')"
+                         alt="Wells Fargo custom order page">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wellsfargo-internation.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wellsfargo-internation.png')"
+                         alt="Wells Fargo international orders page">
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="gallery-item-shadow">
+                    <p>Updated Inside Pages</p>
+                    <img src="Wells Fargo Site Redesign/wells-fargo-product-list.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-product-list.png')"
+                         alt="Updated Wells Fargo product list page">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wellsfargo-diverse.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wellsfargo-diverse.png')"
+                         alt="Wells Fargo product list page with category header">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/hot-tag-update.png"
+                         onclick="openModal('Wells Fargo Site Redesign/hot-tag-update.png')"
+                         alt="Wells Fargo new hot tags section">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile Gallery -->
+        <section class="rowsmallscreen" aria-label="Mobile Wells Fargo Gallery">
+            <!-- Columns duplicated for mobile, same images and alt text as desktop -->
+            <div class="column">
+                <div class="gallery-item-shadow">
+                    <p>Previous Wells Fargo Homepage</p>
+                    <img src="Wells Fargo Site Redesign/wells-fargo-previous.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-previous.png')"
+                         alt="Previous Wells Fargo Homepage design">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wells-fargo-logo-selector.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-logo-selector.png')"
+                         alt="Wells Fargo logo selector page">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wells-fargo-product.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-product.png')"
+                         alt="Wells Fargo product page">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wellsfargo-internation.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wellsfargo-internation.png')"
+                         alt="Wells Fargo international orders page">
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="gallery-item-shadow">
+                    <p>Updated Wells Fargo Homepage</p>
+                    <img src="Wells Fargo Site Redesign/wells-fargo-home.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-home.png')"
+                         alt="Updated Wells Fargo homepage">
+                </div>
+                <div class="gallery-item-shadow">
+                    <p>Updated Inside Pages</p>
+                    <img src="Wells Fargo Site Redesign/wells-fargo-product-list.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-product-list.png')"
+                         alt="Updated Wells Fargo product list page">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wells-fargo-custom-order.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-custom-order.png')"
+                         alt="Wells Fargo custom order page">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wellsfargo-diverse.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wellsfargo-diverse.png')"
+                         alt="Wells Fargo product list page with category header">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/hot-tag-update.png"
+                         onclick="openModal('Wells Fargo Site Redesign/hot-tag-update.png')"
+                         alt="Wells Fargo new hot tags section">
+                </div>
+            </div>
+        </section>
+
+        <!-- Smallest screens -->
+        <section class="rowsmallest" aria-label="Smallest Screen Wells Fargo Gallery">
+            <!-- Repeat same images as above for responsive layout -->
+            <div class="column">
+                <div class="gallery-item-shadow">
+                    <p>Previous Wells Fargo Homepage</p>
+                    <img src="Wells Fargo Site Redesign/wells-fargo-previous.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-previous.png')"
+                         alt="Previous Wells Fargo Homepage design">
+                </div>
+                <div class="gallery-item-shadow">
+                    <p>Updated Wells Fargo Homepage</p>
+                    <img src="Wells Fargo Site Redesign/wells-fargo-home.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-home.png')"
+                         alt="Updated Wells Fargo homepage">
+                </div>
+                <div class="gallery-item-shadow">
+                    <p>Updated Inside Pages</p>
+                    <img src="Wells Fargo Site Redesign/wells-fargo-product-list.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-product-list.png')"
+                         alt="Updated Wells Fargo product list page">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wells-fargo-logo-selector.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-logo-selector.png')"
+                         alt="Wells Fargo logo selector page">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wells-fargo-product.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-product.png')"
+                         alt="Wells Fargo product page">
+                </div>
+            </div>
+            <div class="column">
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wells-fargo-custom-order.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wells-fargo-custom-order.png')"
+                         alt="Wells Fargo custom order page">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wellsfargo-internation.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wellsfargo-internation.png')"
+                         alt="Wells Fargo international orders page">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/wellsfargo-diverse.png"
+                         onclick="openModal('Wells Fargo Site Redesign/wellsfargo-diverse.png')"
+                         alt="Wells Fargo product list page with category header">
+                </div>
+                <div class="gallery-item-shadow">
+                    <img src="Wells Fargo Site Redesign/hot-tag-update.png"
+                         onclick="openModal('Wells Fargo Site Redesign/hot-tag-update.png')"
+                         alt="Wells Fargo new hot tags section">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="Footer">
+        © Hope Geissert, <span id="currentYear"></span>.
+    </footer>
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Modal for Image Display -->
+    <div id="myModal" class="modal" aria-hidden="true" role="dialog" aria-label="Image Modal">
+        <button class="close" onclick="closeModal()" aria-label="Close Image Modal">&times;</button>
+        <img class="modal-content" id="modalImage" alt="Expanded Wells Fargo design image">
+    </div>
+
     <script>
         function openModal(src) {
             document.getElementById("modalImage").src = src;
             document.getElementById("myModal").style.display = "block";
+            document.getElementById("myModal").setAttribute('aria-hidden', 'false');
         }
-
         function closeModal() {
             document.getElementById("myModal").style.display = "none";
+            document.getElementById("myModal").setAttribute('aria-hidden', 'true');
         }
     </script>
-	
-	
+
+</body>
 </html>
