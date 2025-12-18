@@ -1,271 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bayer Email Marketing</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        .ImageContainer img{
+            box-shadow: 5px 10px 10px #c8c8c8;
+        }
+        .ImageText{
+            padding-bottom:10px;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
 
-<style>
-	.ImageContainer img{
-		 box-shadow: 5px 10px 10px #c8c8c8;
-		
-	}
-	
-	.ImageText{
-		padding-bottom:10px;
-		font-size:20px;
-	}
-	
-</style>
-
-
-<html><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="favicon.ico">
-			<div class="TopLinks">
-		<a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-		</div>	
-		
-		
-
-		<div class="MobileNavWrapper">
-		<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
+<!-- Top Navigation -->
+<nav class="TopLinks" aria-label="Main Navigation">
     <a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-  </div>
+    <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+    <a href="aboutme.html" target="_blank">About Me</a>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="MobileNavWrapper">
+    <div id="myNav" class="overlay" aria-hidden="true">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+        <div class="overlay-content">
+            <a href="index.html">Work</a>
+            <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+            <a href="aboutme.html" target="_blank">About Me</a>
+        </div>
+    </div>
+    <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
+            onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
 </div>
 
-
-
-<span style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
 <script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        document.getElementById("myNav").setAttribute('aria-hidden', 'false');
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        document.getElementById("myNav").setAttribute('aria-hidden', 'true');
+    }
 </script>
 
-	<div class="ContentWrapper">
-	
-	<div class="ProjectTitle">Bayer Email Marketing</div>
-	
-	<div class="ProjectDescription">As the new Art Director for Bayer in 2024, I have had the opporturnity to be part of many email marketing campaigns. I get great creative briefs from our marketing director and do my best to bring those visions to life while adding in my expertise as well. The result is a variety of eye catching email promotions that feature the vast array of offers that Bayer does in exciting ways.
+<main class="ContentWrapper">
+    <h1 class="ProjectTitle">Bayer Email Marketing</h1>
+    <p class="ProjectDescription">
+        As Art Director for Bayer, I’ve had the opportunity to shape a wide range of email marketing campaigns. I collaborate closely with our marketing manager, turning creative briefs into engaging, visually striking emails while bringing my own expertise to the table. The result is a collection of campaigns that showcase Bayer’s diverse offerings in dynamic and exciting ways.
+    </p>
 
+<!-- Desktop Gallery -->
+<section class="row" aria-label="Bayer Email Marketing Gallery">
 
-
-
-</div>
-	
-<div class="row">
- <div class="column">
-      <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email1.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email1.jpg')"
-                alt="email 1">
+    <!-- Column 1 -->
+    <div class="column">
+        <div class="gallery-item-shadow">
+            <img src="Bayer eComms 25/Bayer-Holiday-eComm-1103-Full-Picture.jpg"
+                 onclick="openModal('Bayer eComms 25/Bayer-Holiday-eComm-1103-Full-Picture.jpg')"
+                 alt="Bayer holiday eComm campaign">
         </div>
-	 
-	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email2.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email2.jpg')"
-                alt="email 2">
+        <div class="gallery-item-shadow">
+            <img src="Bayer eComms 25/Bayer-Fall-Layers-Hero-0912.jpg"
+                 onclick="openModal('Bayer eComms 25/Bayer-Fall-Layers-Hero-0912.jpg')"
+                 alt="Bayer fall layers campaign">
         </div>
-	 
-	     <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email4.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email4.jpg')"
-                alt="email 4">
+        <div class="gallery-item-shadow">
+            <img src="Bayer eComms 25/Bayer-August-eComm-Hero-V2-0723.jpg"
+                 onclick="openModal('Bayer eComms 25/Bayer-August-eComm-Hero-V2-0723.jpg')"
+                 alt="Bayer August eComm hero">
         </div>
-	 
-	 
-	  
- </div>
-		
-		
-			
-<div class="column">
-	
-	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email5.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email5.jpg')"
-                alt="email 5">
+        <div class="gallery-item-shadow">
+            <img src="Bayer Email Marketing/email1.jpg"
+                 onclick="openModal('Bayer Email Marketing/email1.jpg')"
+                 alt="Email campaign 1">
         </div>
-	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email6.gif"
-                onclick="openModal(
-'Bayer Email Marketing/email6.gif')"
-                alt="email 6">
-        </div>
-	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email7.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email7.jpg')"
-                alt="email 7">
-        </div>
-	   
-</div>
-		
-
-		
-<div class="column">
-		
-	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email8.gif"
-                onclick="openModal(
-'Bayer Email Marketing/email8.gif')"
-                alt="email 8">
-        </div>
-	
-	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email9.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email9.jpg')"
-                alt="email 9">
-        </div>
-	
-	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email3.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email3.jpg')"
-                alt="email 3">
-        </div>
-	
-	
-</div>	
-	
-		
-  </div>
-	
-<div class="rowsmallscreen">
- <div class="column">
-      <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email1.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email1.jpg')"
-                alt="email 1">
-        </div>
-	 
-	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email2.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email2.jpg')"
-                alt="email 2">
-        </div>
-	 
-	     <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email4.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email4.jpg')"
-                alt="email 4">
-        </div>
-	 
-	 	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email5.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email5.jpg')"
-                alt="email 5">
-        </div>
-	 
-	  
- </div>
-		
-		
-			
-<div class="column">
-	
-   <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email6.gif"
-                onclick="openModal(
-'Bayer Email Marketing/email6.gif')"
-                alt="email 6">
-        </div>
-	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email7.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email7.jpg')"
-                alt="email 7">
-        </div>
-	   
-	<div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email8.gif"
-                onclick="openModal(
-'Bayer Email Marketing/email8.gif')"
-                alt="email 8">
-        </div>
-	
-	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email9.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email9.jpg')"
-                alt="email 9">
-        </div>
-	
-	    <div class="gallery-item-shadow">
-            <img src=
-"Bayer Email Marketing/email3.jpg"
-                onclick="openModal(
-'Bayer Email Marketing/email3.jpg')"
-                alt="email 3">
-        </div>
-	
-	
-</div>
-		
-
-		
-
-	
-		
-  </div>
-	
-		
-	</div>
-	
-	
-	<div class="Footer">© Hope Geissert, <span id="currentYear"></span>.</div>
-	<script>
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
-</script>
-	 <!-- Modal for Image Display -->
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
+      
+   
     </div>
 
-    <!-- JavaScript for Modal -->
-    <script>
-        function openModal(src) {
-            document.getElementById("modalImage").src = src;
-            document.getElementById("myModal").style.display = "block";
-        }
+    <!-- Column 2 -->
+    <div class="column">
+        <div class="gallery-item-shadow">
+            <img src="Bayer eComms 25/Bayer-All-Brand-Gifting-Hero.gif"
+                 onclick="openModal('Bayer eComms 25/Bayer-All-Brand-Gifting-Hero.gif')"
+                 alt="Bayer brand gifting hero animation">
+        </div>
+        <div class="gallery-item-shadow">
+            <img src="Bayer eComms 25/Bayer-All-Brand-Gifting-Bayer.jpg"
+                 onclick="openModal('Bayer eComms 25/Bayer-All-Brand-Gifting-Bayer.jpg')"
+                 alt="Bayer brand gifting campaign">
+        </div>
+        <div class="gallery-item-shadow">
+            <img src="Bayer eComms 25/Bayer-SPO-eComm-1017.jpg"
+                 onclick="openModal('Bayer eComms 25/Bayer-SPO-eComm-1017.jpg')"
+                 alt="Bayer SPO email campaign">
+        </div>
+        <div class="gallery-item-shadow">
+            <img src="Bayer Email Marketing/email5.jpg"
+                 onclick="openModal('Bayer Email Marketing/email5.jpg')"
+                 alt="Email campaign 5">
+        </div>
+        <div class="gallery-item-shadow">
+            <img src="Bayer Email Marketing/email6.gif"
+                 onclick="openModal('Bayer Email Marketing/email6.gif')"
+                 alt="Email campaign 6">
+        </div>
+        <div class="gallery-item-shadow">
+            <img src="Bayer Email Marketing/email7.jpg"
+                 onclick="openModal('Bayer Email Marketing/email7.jpg')"
+                 alt="Email campaign 7">
+        </div>
+    </div>
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-    </script>
+    <!-- Column 3 -->
+    <div class="column">
+        <div class="gallery-item-shadow">
+            <img src="Bayer eComms 25/Bayer-FieldMeals-0408.jpg"
+                 onclick="openModal('Bayer eComms 25/Bayer-FieldMeals-0408.jpg')"
+                 alt="Bayer field meals campaign">
+        </div>
+        <div class="gallery-item-shadow">
+            <img src="Bayer eComms 25/Bayer-August-eComm---0714.jpg"
+                 onclick="openModal('Bayer eComms 25/Bayer-August-eComm---0714.jpg')"
+                 alt="Bayer August email campaign">
+        </div>
+        <div class="gallery-item-shadow">
+            <img src="Bayer Email Marketing/email8.gif"
+                 onclick="openModal('Bayer Email Marketing/email8.gif')"
+                 alt="Email campaign 8">
+        </div>
+        <div class="gallery-item-shadow">
+            <img src="Bayer Email Marketing/email9.jpg"
+                 onclick="openModal('Bayer Email Marketing/email9.jpg')"
+                 alt="Email campaign 9">
+        </div>
+        <div class="gallery-item-shadow">
+            <img src="Bayer Email Marketing/email3.jpg"
+                 onclick="openModal('Bayer Email Marketing/email3.jpg')"
+                 alt="Email campaign 3">
+        </div>
+    </div>
+
 	
+	
+</section>
+	
+	<!-- Mobile Gallery -->
+<section class="rowsmallscreen" aria-label="Mobile Bayer Email Marketing Gallery">
+    <div class="column">
+
+        <!-- Newest -->
+        <div class="gallery-item-shadow"><img src="Bayer eComms 25/Bayer-Holiday-eComm-1103-Full-Picture.jpg" onclick="openModal('Bayer eComms 25/Bayer-Holiday-eComm-1103-Full-Picture.jpg')" alt="Bayer holiday eComm campaign"></div>
+        <div class="gallery-item-shadow"><img src="Bayer eComms 25/Bayer-Fall-Layers-Hero-0912.jpg" onclick="openModal('Bayer eComms 25/Bayer-Fall-Layers-Hero-0912.jpg')" alt="Bayer fall layers campaign"></div>
+        <div class="gallery-item-shadow"><img src="Bayer eComms 25/Bayer-August-eComm-Hero-V2-0723.jpg" onclick="openModal('Bayer eComms 25/Bayer-August-eComm-Hero-V2-0723.jpg')" alt="Bayer August eComm hero"></div>
+        <div class="gallery-item-shadow"><img src="Bayer eComms 25/Bayer-All-Brand-Gifting-Hero.gif" onclick="openModal('Bayer eComms 25/Bayer-All-Brand-Gifting-Hero.gif')" alt="Bayer brand gifting hero animation"></div>
+        <div class="gallery-item-shadow"><img src="Bayer eComms 25/Bayer-All-Brand-Gifting-Bayer.jpg" onclick="openModal('Bayer eComms 25/Bayer-All-Brand-Gifting-Bayer.jpg')" alt="Bayer brand gifting campaign"></div>
+        <div class="gallery-item-shadow"><img src="Bayer eComms 25/Bayer-SPO-eComm-1017.jpg" onclick="openModal('Bayer eComms 25/Bayer-SPO-eComm-1017.jpg')" alt="Bayer SPO email campaign"></div>
+        <div class="gallery-item-shadow"><img src="Bayer eComms 25/Bayer-FieldMeals-0408.jpg" onclick="openModal('Bayer eComms 25/Bayer-FieldMeals-0408.jpg')" alt="Bayer field meals campaign"></div>
+        <div class="gallery-item-shadow"><img src="Bayer eComms 25/Bayer-August-eComm---0714.jpg" onclick="openModal('Bayer eComms 25/Bayer-August-eComm---0714.jpg')" alt="Bayer August email campaign"></div>
+
+        <!-- Earlier -->
+        <div class="gallery-item-shadow"><img src="Bayer Email Marketing/email1.jpg" onclick="openModal('Bayer Email Marketing/email1.jpg')" alt="Email campaign 1"></div>
+      
+
+        <div class="gallery-item-shadow"><img src="Bayer Email Marketing/email5.jpg" onclick="openModal('Bayer Email Marketing/email5.jpg')" alt="Email campaign 5"></div>
+        <div class="gallery-item-shadow"><img src="Bayer Email Marketing/email6.gif" onclick="openModal('Bayer Email Marketing/email6.gif')" alt="Email campaign 6"></div>
+        <div class="gallery-item-shadow"><img src="Bayer Email Marketing/email7.jpg" onclick="openModal('Bayer Email Marketing/email7.jpg')" alt="Email campaign 7"></div>
+        <div class="gallery-item-shadow"><img src="Bayer Email Marketing/email8.gif" onclick="openModal('Bayer Email Marketing/email8.gif')" alt="Email campaign 8"></div>
+        <div class="gallery-item-shadow"><img src="Bayer Email Marketing/email9.jpg" onclick="openModal('Bayer Email Marketing/email9.jpg')" alt="Email campaign 9"></div>
+        <div class="gallery-item-shadow"><img src="Bayer Email Marketing/email3.jpg" onclick="openModal('Bayer Email Marketing/email3.jpg')" alt="Email campaign 3"></div>
+
+    </div>
+</section>
+
+
+</main>
+
+<footer class="Footer">
+    © Hope Geissert, <span id="currentYear"></span>.
+</footer>
+
+<script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+<!-- Modal for Image Display -->
+<div id="myModal" class="modal" aria-hidden="true" role="dialog" aria-label="Email Campaign Image Modal">
+    <button class="close" onclick="closeModal()" aria-label="Close Image Modal">&times;</button>
+    <img class="modal-content" id="modalImage" alt="Expanded email campaign image">
+</div>
+
+<script>
+    function openModal(src) {
+        document.getElementById("modalImage").src = src;
+        document.getElementById("myModal").style.display = "block";
+        document.getElementById("myModal").setAttribute('aria-hidden', 'false');
+    }
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+        document.getElementById("myModal").setAttribute('aria-hidden', 'true');
+    }
+</script>
+
+</body>
 </html>

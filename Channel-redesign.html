@@ -1,152 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Channel Site Redesign</title>
-	
-	
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Channel Site Redesign</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        .ImageContainer img{
+            box-shadow: 5px 10px 10px #c8c8c8;
+            max-width:800px!important;
+        }
+        .ImageText{
+            padding-bottom:10px;
+            font-size:20px;
+        }
+    </style>
 </head>
+<body>
 
-<style>
-	.ImageContainer img{
-		 box-shadow: 5px 10px 10px #c8c8c8;
-		max-width:800px!important;
-	}
-	
-	.ImageText{
-		padding-bottom:10px;
-		font-size:20px;
-	}
-	
-
-	
-</style>
-
-
-<html><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="image/png" href="favicon.ico">
-		<div class="TopLinks">
-		<a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-		</div>	
-		
-		
-
-		<div class="MobileNavWrapper">
-		<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
+<!-- Top Navigation -->
+<nav class="TopLinks" aria-label="Main Navigation">
     <a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-  </div>
-</div>
+    <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+    <a href="aboutme.html" target="_blank">About Me</a>
+</nav>
 
-
-
-<span style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>	
-
-	<div class="ContentWrapper">
-	
-	<div class="ProjectTitle">Channel Site Redesign</div>
-	
-	<div class="ProjectDescription">Channel was ready for a fresh look and feel to their site in 2024, so I was asked to come up with a new design. I studied their brand to come up with ideas to refresh the site. Using their elements of arches and angled buttons, I applied these styles throughout the site and featured new photography that was done in the spring. Headwear is a top seller for them, so I created a site design that revolved around that. 
-
-</div>
-
-	
-	
-
-		
-		
-			<div class="row">
-
-		
-		
-			
-<div class="column">
-	
-	     
-	
-	  <div class="gallery-item-shadow">
-            <img src=
-"Channel Site Redesign/channel-new-home.png"
-                onclick="openModal(
-'Channel Site Redesign/channel-new-home.png')"
-                alt="channel cover">
+<!-- Mobile Navigation -->
+<div class="MobileNavWrapper">
+    <div id="myNav" class="overlay" aria-hidden="true">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+        <div class="overlay-content">
+            <a href="index.html">Work</a>
+            <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+            <a href="aboutme.html" target="_blank">About Me</a>
         </div>
-	
-  
-	
-	    
-	   
-</div>
-		
-	
-		
-  </div>
-	
-			
-			<div class="rowsmallscreen">
-
-		
-		
-			
-<div class="column">
-	
-	     
-	
-	  <div class="gallery-item-shadow">
-            <img src=
-"Channel Site Redesign/channel-new-home.png"
-                onclick="openModal(
-'Channel Site Redesign/channel-new-home.png')"
-                alt="channel cover">
-        </div>
-	
-  
-	
-	    
-	   
-</div>
-		
-	
-		
-  </div>
-	</div>
-	
-	<div class="Footer">© Hope Geissert, <span id="currentYear"></span>.</div>
-	<script>
-  document.getElementById("currentYear").textContent = new Date().getFullYear();
-</script>
-	<!-- Modal for Image Display -->
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
     </div>
+    <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
+            onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
+</div>
 
-    <!-- JavaScript for Modal -->
-    <script>
-        function openModal(src) {
-            document.getElementById("modalImage").src = src;
-            document.getElementById("myModal").style.display = "block";
-        }
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        document.getElementById("myNav").setAttribute('aria-hidden', 'false');
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        document.getElementById("myNav").setAttribute('aria-hidden', 'true');
+    }
+</script>
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-    </script>
-	
+<main class="ContentWrapper">
+    <h1 class="ProjectTitle">Channel Site Redesign</h1>
+    <p class="ProjectDescription">
+        Channel was ready for a fresh look and feel to their site in 2024, so I was asked to come up with a new design. I studied their brand to come up with ideas to refresh the site. Using their elements of arches and angled buttons, I applied these styles throughout the site and featured new photography that was done in the spring. Headwear is a top seller for them, so I created a site design that revolved around that.
+    </p>
+
+    <!-- Desktop Gallery -->
+    <section class="row" aria-label="Channel Site Redesign Gallery">
+        <div class="column">
+            <div class="gallery-item-shadow">
+                <img src="Channel Site Redesign/channel-new-home.png"
+                     onclick="openModal('Channel Site Redesign/channel-new-home.png')"
+                     alt="Channel website new homepage design">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Gallery -->
+    <section class="rowsmallscreen" aria-label="Mobile Channel Site Redesign Gallery">
+        <div class="column">
+            <div class="gallery-item-shadow">
+                <img src="Channel Site Redesign/channel-new-home.png"
+                     onclick="openModal('Channel Site Redesign/channel-new-home.png')"
+                     alt="Channel website new homepage design">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="Footer">
+    © Hope Geissert, <span id="currentYear"></span>.
+</footer>
+
+<script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+<!-- Modal for Image Display -->
+<div id="myModal" class="modal" aria-hidden="true" role="dialog" aria-label="Image Modal">
+    <button class="close" onclick="closeModal()" aria-label="Close Image Modal">&times;</button>
+    <img class="modal-content" id="modalImage" alt="Expanded Channel website image">
+</div>
+
+<script>
+    function openModal(src) {
+        document.getElementById("modalImage").src = src;
+        document.getElementById("myModal").style.display = "block";
+        document.getElementById("myModal").setAttribute('aria-hidden', 'false');
+    }
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+        document.getElementById("myModal").setAttribute('aria-hidden', 'true');
+    }
+</script>
+
+</body>
 </html>

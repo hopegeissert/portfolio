@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>2025-2026 Channel Catalog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <style>
+    .ImageContainer img {
+      box-shadow: 5px 10px 10px #c8c8c8;
+      max-width: 800px !important;
+    }
+
+    .ImageText {
+      padding-bottom: 10px;
+      font-size: 20px;
+    }
+
+    /* Flexbox gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding:40px;
+    }
+
+    .gallery-item-shadow {
+      flex: 1 1 30%; /* 3 images per row default */
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery-item-shadow img {
+      width: 100%;
+      height: auto;
+      box-shadow: 5px 10px 10px #c8c8c8;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-item-shadow {
+        flex: 1 1 45%; /* 2 images per row on tablet */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-item-shadow {
+        flex: 1 1 100%; /* 1 image per row on mobile */
+      }
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:focus {
+      outline: 2px solid #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Links -->
+  <div class="TopLinks">
+    <a href="index.html">Work</a>
+    <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+    <a href="aboutme.html" target="_blank">About Me</a>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div class="MobileNavWrapper">
+    <div id="myNav" class="overlay" role="navigation" aria-label="Mobile Menu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Work</a>
+        <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+        <a href="aboutme.html" target="_blank">About Me</a>
+      </div>
+    </div>
+    <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;" onclick="openNav()" aria-label="Open Menu">&#9776;</button>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
+  <!-- Content -->
+  <div class="ContentWrapper">
+    <div class="ProjectTitle">2025-2026 Channel Catalog</div>
+    <div class="ProjectDescription">
+      This digital catalog is designed to guide shoppers through each collection in an engaging, visually appealing format. It provides educational insights on the different types of caps and their fit, making it both informative and easy to navigate. The goal was to create a modern, intuitive, and enjoyable shopping experience.
+    </div>
+
+    <!-- Updated Gallery -->
+    <div class="gallery">
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_01.jpg" onclick="openModal(this.src)" alt="Catalog page 01 showing cover and title page">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_02.jpg" onclick="openModal(this.src)" alt="Catalog page 02 featuring hats collection overview">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_03.jpg" onclick="openModal(this.src)" alt="Catalog page 03 showing new arrivals">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_05.jpg" onclick="openModal(this.src)" alt="Catalog page 05 showing men’s headwear">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_06.jpg" onclick="openModal(this.src)" alt="Catalog page 06 showing women's caps collection">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_07.jpg" onclick="openModal(this.src)" alt="Catalog page 07 displaying color variety of caps">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_08.jpg" onclick="openModal(this.src)" alt="Catalog page 08 highlighting accessories">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_09.jpg" onclick="openModal(this.src)" alt="Catalog page 09 showing fit guide">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_15.jpg" onclick="openModal(this.src)" alt="Catalog page 15 featuring top sellers">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_17.jpg" onclick="openModal(this.src)" alt="Catalog page 17 with seasonal highlights">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_18.jpg" onclick="openModal(this.src)" alt="Catalog page 18 showing promotions">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_20.jpg" onclick="openModal(this.src)" alt="Catalog page 20 showing complete collection overview">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_25.jpg" onclick="openModal(this.src)" alt="Catalog page 25 featuring product details">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_29.jpg" onclick="openModal(this.src)" alt="Catalog page 29 with ordering instructions">
+      </div>
+      <div class="gallery-item-shadow">
+        <img src="Channel 2025 Catalog/2025 Channel Catalog_Page_33.jpg" onclick="openModal(this.src)" alt="Catalog page 33 concluding pages">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="Footer">© Hope Geissert, <span id="currentYear"></span>.</div>
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Modal for Image Display -->
+  <div id="myModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalLabel">
+    <button class="close" onclick="closeModal()" aria-label="Close Image Modal">&times;</button>
+    <img class="modal-content" id="modalImage" alt="Enlarged catalog page">
+  </div>
+
+  <script>
+    function openModal(src) {
+      document.getElementById("modalImage").src = src;
+      document.getElementById("myModal").style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>
