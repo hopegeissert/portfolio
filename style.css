@@ -20,6 +20,8 @@ h1, h2, h3 {
 }
 
 
+
+
 .MainLogo {
 	padding-top:30px;
 	max-width:1200px;
@@ -79,7 +81,7 @@ padding-top: 30px;
 
 .BoxImage img{
 	width:100%;
-	max-width:450px;
+	max-width:380px;
 	border-radius:40px;
 	border: 2px solid #f2eceb;
 }
@@ -296,6 +298,8 @@ padding-top: 30px;
      overflow: auto;
      background-color: rgba(0, 0, 0, 0.9);
  }
+
+
 
  .modal-content {
      margin: auto;

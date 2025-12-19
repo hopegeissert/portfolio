@@ -18,26 +18,28 @@
 </head>
 <body>
 
-<!-- Top Navigation -->
-<nav class="TopLinks" aria-label="Main Navigation">
-    <a href="index.html">Work</a>
-    <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-    <a href="aboutme.html" target="_blank">About Me</a>
-</nav>
+    <!-- Top Navigation -->
+    <nav class="TopLinks" aria-label="Main Navigation">
+        <a href="index.html">Work</a>
+        <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+        <a href="aboutme.html">About Me</a>
+		<a href="Contact-Form.html">Contact</a>
+    </nav>
 
-<!-- Mobile Navigation -->
-<div class="MobileNavWrapper">
-    <div id="myNav" class="overlay" aria-hidden="true">
-        <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
-        <div class="overlay-content">
-            <a href="index.html">Work</a>
-            <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-            <a href="aboutme.html" target="_blank">About Me</a>
+    <!-- Mobile Navigation -->
+    <div class="MobileNavWrapper">
+        <div id="myNav" class="overlay" aria-hidden="true">
+            <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+            <div class="overlay-content">
+                <a href="index.html">Work</a>
+                <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+                <a href="aboutme.html">About Me</a>
+				<a href="Contact-Form.html">Contact</a>
+            </div>
         </div>
+        <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
+                onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
     </div>
-    <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
-            onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
-</div>
 
 <script>
     function openNav() {

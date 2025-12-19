@@ -22,7 +22,7 @@
 	
 	.Headshot img{
 		width:100%;
-		max-width:400px;
+		max-width:200px;
 	}
 	
 	.AboutMe{
@@ -49,28 +49,35 @@
 <html><meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon.ico">
-			<div class="TopLinks">
-		<a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-		</div>	
-		
-		
+			
+	
+    <!-- Top Navigation -->
+    <nav class="TopLinks" aria-label="Main Navigation">
+        <a href="index.html">Work</a>
+        <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+        <a href="aboutme.html">About Me</a>
+		<a href="Contact-Form.html">Contact</a>
+    </nav>
 
-		<div class="MobileNavWrapper">
-		<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="index.html">Work</a>
-		<a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
-		<a href="aboutme.html" target="_blank">About Me</a>
-  </div>
-</div>
+    <!-- Mobile Navigation -->
+    <div class="MobileNavWrapper">
+        <div id="myNav" class="overlay" aria-hidden="true">
+            <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+            <div class="overlay-content">
+                <a href="index.html">Work</a>
+                <a href="Hope-Geissert-Resume.pdf" target="_blank">Resume</a>
+                <a href="aboutme.html">About Me</a>
+				<a href="Contact-Form.html">Contact</a>
+            </div>
+        </div>
+        <button style="font-size:44px; color:#686868; cursor:pointer; background:none; border:none;"
+                onclick="openNav()" aria-label="Open Navigation">&#9776;</button>
+    </div>
 
 
 
 <span style="font-size:44px; color:#686868; cursor:pointer" onclick="openNav()">&#9776; </span>
-</div>
+
 <script>
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
@@ -83,7 +90,7 @@ function closeNav() {
 
 	
 	<div class="AboutMe">About Me</div>
-	<div class="Headshot"><img src="portfolio-headshot-1.png"></div>
+	<div class="Headshot"><img src="new-pic-25.jpg"></div>
 	<div class="AboutMeWrapper">
 	
 	
